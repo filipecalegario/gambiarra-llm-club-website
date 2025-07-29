@@ -57,13 +57,13 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
           </Button>
           <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
             <DialogTrigger asChild>
-              <Button 
-                variant="outline"
-                size="lg" 
-                className="border-2 border-hack text-hack hover:bg-hack hover:text-terminal font-bold px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-purple)] transition-all duration-300"
-              >
-                QUERO PATROCINAR O 1º ENCONTRO 💰
-              </Button>
+            <Button 
+              variant="outline"
+              size="lg" 
+              className="border-2 border-hack text-hack hover:bg-hack hover:text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-purple)] transition-all duration-300 text-center leading-tight"
+            >
+              <span className="block md:inline">QUERO PATROCINAR O 1º ENCONTRO 💰</span>
+            </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-md">
               <DialogHeader>
