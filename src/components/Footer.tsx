@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { useState } from "react";
 
 interface FooterProps {
   onJoinClick: () => void;
 }
 
 export const Footer = ({ onJoinClick }: FooterProps) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <footer className="bg-terminal border-t border-matrix/30 py-16 px-6">
       <div className="max-w-6xl mx-auto">
@@ -32,14 +35,43 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
             >
               LER MANIFESTO 📜
             </Button>
-            <Button 
-              onClick={() => window.open("mailto:fcac@cin.ufpe.br", "_self")}
-              variant="outline"
-              size="lg" 
-              className="border-2 border-hack text-hack hover:bg-hack hover:text-terminal font-bold px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-purple)] transition-all duration-300"
-            >
-              QUERO PATROCINAR O 1º ENCONTRO 💰
-            </Button>
+            <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+              <DialogTrigger asChild>
+                <Button 
+                  variant="outline"
+                  size="lg" 
+                  className="border-2 border-hack text-hack hover:bg-hack hover:text-terminal font-bold px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-purple)] transition-all duration-300"
+                >
+                  QUERO PATROCINAR O 1º ENCONTRO 💰
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-md">
+                <DialogHeader>
+                  <DialogTitle className="text-center text-xl font-bold text-foreground">
+                    Patrocínio do 1º Encontro
+                  </DialogTitle>
+                  <DialogDescription className="text-center text-muted-foreground mt-4">
+                    Para patrocinar o primeiro encontro do Gambiarra LLM Club, envie um e-mail para:
+                  </DialogDescription>
+                </DialogHeader>
+                <div className="flex flex-col items-center space-y-4 py-4">
+                  <div className="bg-terminal border border-matrix/30 rounded-lg p-4 w-full">
+                    <p className="text-center font-mono text-matrix font-bold text-lg">
+                      calegario@cin.ufpe.br
+                    </p>
+                  </div>
+                  <Button 
+                    onClick={() => {
+                      navigator.clipboard.writeText("calegario@cin.ufpe.br");
+                      setIsModalOpen(false);
+                    }}
+                    className="bg-gradient-to-r from-matrix to-code hover:from-code hover:to-matrix text-terminal font-bold"
+                  >
+                    Copiar E-mail
+                  </Button>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
         
