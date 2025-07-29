@@ -97,7 +97,7 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
         <div className="mt-12 text-muted-foreground">
           <p className="text-sm mb-2">👾 Encontros mensais • 🔧 Hardware próprio • 🏆 Competições épicas</p>
           <p className="text-xs">
-            <span className="text-matrix">▸</span> Em breve: primeiro encontro oficial em Recife.
+            <span className="text-matrix">▸</span> Em breve: primeiro encontro oficial no Recife.
           </p>
         </div>
       </div>
