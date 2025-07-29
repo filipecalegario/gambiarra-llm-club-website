@@ -12,8 +12,10 @@ export const AboutSection = () => {
             
             <div className="space-y-6 text-lg text-muted-foreground">
               <p>
-                O <span className="text-matrix font-semibold">Gambiarra LLM Club</span> é inspirado no <a href="https://en.wikipedia.org/wiki/Homebrew_Computer_Club">Homebrew Computer Club</a>, o lendário clube de hobbistas que construiam seus próprios computadores na época dos mainframes. <br />
+                O <span className="text-matrix font-semibold">Gambiarra LLM Club</span> é inspirado no <span className="text-matrix font-semibold"><a href="https://en.wikipedia.org/wiki/Homebrew_Computer_Club">Homebrew Computer Club</a></span>, o lendário clube de hobbistas que construiam seus próprios computadores na época dos mainframes. <br />
+                <br />
                 Somos uma comunidade de entusiastas que rodam seus modelos de linguagem localmente, ajustando as configurações para alcançar o melhor resultado que der. <br /> 
+                <br />
                 Não temos a pretensão de bater os modelos das big techs. Aqui, a criatividade e a engenhosidade valem mais que os melhores rankings dos benchmarks.
               </p>
               
@@ -21,7 +23,7 @@ export const AboutSection = () => {
                 <div className="flex items-start space-x-3">
                   <span className="text-neon text-xl">🔧</span>
                   <div>
-                    <h3 className="text-foreground font-semibold mb-1">Hardware Próprio</h3>
+                    <h3 className="text-foreground font-semibold mb-1">Rodando LLMs Locais</h3>
                     <p className="text-sm">Traga seu setup, por mais simples que seja. A gambiarra é bem-vinda!</p>
                   </div>
                 </div>
@@ -38,7 +40,7 @@ export const AboutSection = () => {
                   <span className="text-matrix text-xl">🤝</span>
                   <div>
                     <h3 className="text-foreground font-semibold mb-1">Comunidade</h3>
-                    <p className="text-sm">Troca de conhecimento, scripts, prompts, LLMs open source.</p>
+                    <p className="text-sm">Troca de conhecimento, ferramentas, prompts, LLMs open source.</p>
                   </div>
                 </div>
                 

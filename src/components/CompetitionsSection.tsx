@@ -7,7 +7,7 @@ const competitions = [
     description: "Dois LLMs conversam tentando manter coerência o maior tempo possível",
     difficulty: "Médio",
     icon: "🤖",
-    details: ["Tema livre ou específico", "Avaliação de criatividade", "Persistência de identidade"]
+    details: ["Tema livre ou específico", "Avaliação de criatividade", "Consistência de identidade"]
   },
   {
     title: "Tradução Infinita",

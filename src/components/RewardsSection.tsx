@@ -41,11 +41,9 @@ const rewards = [
 
 const features = [
   "Show & Tell com setups e hacks",
-  "Repositório comunitário de scripts",
-  "Newsletter e Discord exclusivos",
-  "Acesso a benchmarks especiais",
+  "Repositório comunitário de referências e ferramentas",
+  "Discord exclusivos",
   "Mentoria entre membros",
-  "Descontos em hardware parceiro"
 ];
 
 export const RewardsSection = () => {

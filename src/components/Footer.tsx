@@ -85,7 +85,6 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
             <div className="space-y-2 text-muted-foreground text-sm">
               <p>📧 Em breve: canal oficial</p>
               <p>💬 Discord em preparação</p>
-              <p>📱 Newsletter semanal</p>
             </div>
           </div>
           
