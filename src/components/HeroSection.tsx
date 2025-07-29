@@ -32,7 +32,7 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             O primeiro clube de <span className="text-matrix font-semibold">LLMs caseiras</span> do Brasil. 
-            Traga seu hardware, suas gambiarras e vamos competir!
+            Traga seus LLMs locais, faça suas gambiarras e vamos nos divertir!
           </p>
         </div>
         
@@ -56,7 +56,7 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
         <div className="mt-12 text-muted-foreground">
           <p className="text-sm mb-2">👾 Encontros mensais • 🔧 Hardware próprio • 🏆 Competições épicas</p>
           <p className="text-xs">
-            <span className="text-matrix">▸</span> Em breve: primeiro encontro oficial
+            <span className="text-matrix">▸</span> Em breve: primeiro encontro oficial em Recife.
           </p>
         </div>
       </div>

@@ -12,8 +12,8 @@ export const AboutSection = () => {
             
             <div className="space-y-6 text-lg text-muted-foreground">
               <p>
-                O <span className="text-matrix font-semibold">Gambiarra LLM Club</span> é uma comunidade de entusiastas 
-                que rodam seus próprios modelos de linguagem localmente. Aqui, a criatividade e a engenhosidade valem mais que hardware caro.
+                O <span className="text-matrix font-semibold">Gambiarra LLM Club</span> é inspirado no <a href="https://en.wikipedia.org/wiki/Homebrew_Computer_Club">Homebrew Computer Club<a/>, um clube de hobbistas que construiam seus computadores na época dos mainframes. Somos uma comunidade de entusiastas 
+                que rodam seus próprios modelos de linguagem localmente, ajustando as configurações e hardwares para termos o melhor resultado, mas sem a pretensão de bater nenhum modelo das big techs. Aqui, a criatividade e a engenhosidade valem mais que os melhores rankings dos benchmarks.
               </p>
               
               <div className="space-y-4">
@@ -37,7 +37,7 @@ export const AboutSection = () => {
                   <span className="text-matrix text-xl">🤝</span>
                   <div>
                     <h3 className="text-foreground font-semibold mb-1">Comunidade</h3>
-                    <p className="text-sm">Troca de conhecimento, scripts, prompts e muita diversão.</p>
+                    <p className="text-sm">Troca de conhecimento, scripts, prompts, LLMs open source.</p>
                   </div>
                 </div>
                 
@@ -45,7 +45,7 @@ export const AboutSection = () => {
                   <span className="text-neon text-xl">📅</span>
                   <div>
                     <h3 className="text-foreground font-semibold mb-1">Encontros Regulares</h3>
-                    <p className="text-sm">Mensais ou bimestrais, presenciais ou híbridos.</p>
+                    <p className="text-sm">Mensais ou bimestrais, sempre de forma presencial.</p>
                   </div>
                 </div>
               </div>
