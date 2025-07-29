@@ -32,6 +32,14 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
             >
               LER MANIFESTO 📜
             </Button>
+            <Button 
+              onClick={() => window.open("mailto:fcac@cin.ufpe.br", "_self")}
+              variant="outline"
+              size="lg" 
+              className="border-2 border-hack text-hack hover:bg-hack hover:text-terminal font-bold px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-purple)] transition-all duration-300"
+            >
+              QUERO PATROCINAR O 1º ENCONTRO 💰
+            </Button>
           </div>
         </div>
         
