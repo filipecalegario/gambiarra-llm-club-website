@@ -45,11 +45,12 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
             TENHO INTERESSE EM PARTICIPAR
           </Button>
           <Button 
+            onClick={() => window.open("http://www.cin.ufpe.br/~fcac/manifesto-gambiarra-llm-club.pdf", "_blank")}
             variant="outline" 
             size="lg"
             className="border-2 border-neon text-neon hover:bg-neon hover:text-terminal font-bold px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-300"
           >
-            SAIBA MAIS
+            LER MANIFESTO 📜
           </Button>
         </div>
         
