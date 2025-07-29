@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Custom gambiarra colors
+				matrix: 'hsl(var(--matrix-green))',
+				neon: 'hsl(var(--neon-orange))',
+				hack: 'hsl(var(--hack-blue))',
+				terminal: 'hsl(var(--terminal-bg))',
+				code: 'hsl(var(--code-green))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
