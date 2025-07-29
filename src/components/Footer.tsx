@@ -23,26 +23,26 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
             <Button 
               onClick={onJoinClick}
               size="lg" 
-              className="bg-gradient-to-r from-matrix to-code hover:from-code hover:to-matrix text-terminal font-bold px-8 py-6 text-lg rounded-lg border border-matrix shadow-lg hover:shadow-[var(--glow-green)] transition-all duration-300 transform hover:scale-105"
+              className="bg-gradient-to-r from-matrix to-code hover:from-code hover:to-matrix text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg border border-matrix shadow-lg hover:shadow-[var(--glow-green)] transition-all duration-300 transform hover:scale-105 text-center leading-tight"
             >
-              TENHO INTERESSE EM PARTICIPAR 🚀
+              <span className="block md:inline">TENHO INTERESSE EM PARTICIPAR 🚀</span>
             </Button>
             <Button 
               onClick={() => window.open("http://www.cin.ufpe.br/~fcac/manifesto-gambiarra-llm-club.pdf", "_blank")}
               variant="outline"
               size="lg" 
-              className="border-2 border-neon text-neon hover:bg-neon hover:text-terminal font-bold px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-300"
+              className="border-2 border-neon text-neon hover:bg-neon hover:text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-300 text-center leading-tight"
             >
-              LER MANIFESTO 📜
+              <span className="block md:inline">LER MANIFESTO 📜</span>
             </Button>
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
               <DialogTrigger asChild>
                 <Button 
                   variant="outline"
                   size="lg" 
-                  className="border-2 border-hack text-hack hover:bg-hack hover:text-terminal font-bold px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-purple)] transition-all duration-300"
+                  className="border-2 border-hack text-hack hover:bg-hack hover:text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-purple)] transition-all duration-300 text-center leading-tight"
                 >
-                  QUERO PATROCINAR O 1º ENCONTRO 💰
+                  <span className="block md:inline">QUERO PATROCINAR O 1º ENCONTRO 💰</span>
                 </Button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-md">
