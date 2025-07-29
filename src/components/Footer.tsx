@@ -16,21 +16,23 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
           <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
             Junte-se à revolução dos LLMs caseiras. Traga suas ideias malucas e vamos fazer história!
           </p>
-          <Button 
-            onClick={onJoinClick}
-            size="lg" 
-            className="bg-gradient-to-r from-matrix to-code hover:from-code hover:to-matrix text-terminal font-bold px-8 py-6 text-lg rounded-lg border border-matrix shadow-lg hover:shadow-[var(--glow-green)] transition-all duration-300 transform hover:scale-105"
-          >
-            TENHO INTERESSE EM PARTICIPAR 🚀
-          </Button>
-          <Button 
-            onClick={() => window.open("http://www.cin.ufpe.br/~fcac/manifesto-gambiarra-llm-club.pdf", "_blank")}
-            variant="outline"
-            size="lg" 
-            className="border-2 border-neon text-neon hover:bg-neon hover:text-terminal font-bold px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-300"
-          >
-            LER MANIFESTO 📜
-          </Button>
+          <div className="flex flex-col gap-4 justify-center items-center">
+            <Button 
+              onClick={onJoinClick}
+              size="lg" 
+              className="bg-gradient-to-r from-matrix to-code hover:from-code hover:to-matrix text-terminal font-bold px-8 py-6 text-lg rounded-lg border border-matrix shadow-lg hover:shadow-[var(--glow-green)] transition-all duration-300 transform hover:scale-105"
+            >
+              TENHO INTERESSE EM PARTICIPAR 🚀
+            </Button>
+            <Button 
+              onClick={() => window.open("http://www.cin.ufpe.br/~fcac/manifesto-gambiarra-llm-club.pdf", "_blank")}
+              variant="outline"
+              size="lg" 
+              className="border-2 border-neon text-neon hover:bg-neon hover:text-terminal font-bold px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-300"
+            >
+              LER MANIFESTO 📜
+            </Button>
+          </div>
         </div>
         
         {/* Info Grid */}

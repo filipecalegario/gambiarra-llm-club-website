@@ -36,7 +36,7 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
           </p>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col gap-4 justify-center items-center">
           <Button 
             onClick={onJoinClick}
             size="lg" 
