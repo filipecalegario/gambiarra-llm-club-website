@@ -6,8 +6,7 @@ import { Footer } from "@/components/Footer";
 
 const Index = () => {
   const handleJoinClick = () => {
-    // Substitua pela URL real do Google Forms quando estiver pronto
-    window.open("https://forms.google.com/", "_blank");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSdx3x-ThUit5E5c0HKct7ABU8UGSZuBeHB8vJwGPwebHyFeBQ/viewform?usp=dialog", "_blank");
   };
 
   return (
