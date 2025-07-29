@@ -51,9 +51,9 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
             onClick={() => window.open("http://www.cin.ufpe.br/~fcac/manifesto-gambiarra-llm-club.pdf", "_blank")}
             variant="outline" 
             size="lg"
-            className="border-2 border-neon text-neon hover:bg-neon hover:text-terminal font-bold px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-300"
+            className="border-2 border-neon text-neon hover:bg-neon hover:text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-300 text-center leading-tight"
           >
-            LER MANIFESTO 📜
+            <span className="block md:inline">LER MANIFESTO 📜</span>
           </Button>
           <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
             <DialogTrigger asChild>
