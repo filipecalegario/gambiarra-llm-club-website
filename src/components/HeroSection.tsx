@@ -42,7 +42,7 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
             size="lg" 
             className="bg-gradient-to-r from-matrix to-code hover:from-code hover:to-matrix text-terminal font-bold px-8 py-6 text-lg rounded-lg border border-matrix shadow-lg hover:shadow-[var(--glow-green)] transition-all duration-300 transform hover:scale-105"
           >
-            TENHO INTERESSE DE PARTICIPAR
+            TENHO INTERESSE EM PARTICIPAR
           </Button>
           <Button 
             variant="outline" 
