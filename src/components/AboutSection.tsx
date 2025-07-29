@@ -11,9 +11,9 @@ export const AboutSection = () => {
             </h2>
             
             <div className="space-y-6 text-lg text-muted-foreground">
-             <p>
-                O <span className="text-matrix font-semibold">Gambiarra LLM Club</span> é inspirado no <a href="https://en.wikipedia.org/wiki/Homebrew_Computer_Club">Homebrew Computer Club</a>, o lendário clube de hobbistas que construiam seus próprios computadores na época dos mainframes. <br>
-                Somos uma comunidade de entusiastas que rodam seus modelos de linguagem localmente, ajustando as configurações para alcançar o melhor resultado que der. <br> 
+              <p>
+                O <span className="text-matrix font-semibold">Gambiarra LLM Club</span> é inspirado no <a href="https://en.wikipedia.org/wiki/Homebrew_Computer_Club">Homebrew Computer Club</a>, o lendário clube de hobbistas que construiam seus próprios computadores na época dos mainframes. <br />
+                Somos uma comunidade de entusiastas que rodam seus modelos de linguagem localmente, ajustando as configurações para alcançar o melhor resultado que der. <br /> 
                 Não temos a pretensão de bater os modelos das big techs. Aqui, a criatividade e a engenhosidade valem mais que os melhores rankings dos benchmarks.
               </p>
               
