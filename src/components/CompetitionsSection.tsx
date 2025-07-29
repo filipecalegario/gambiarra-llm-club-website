@@ -62,7 +62,7 @@ export const CompetitionsSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-transparent bg-gradient-to-r from-matrix to-neon bg-clip-text">
-            COMPETIÇÕES
+            JOGOS, EXPERIMENTOS E COMPETIÇÕES
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Desafios épicos que vão testar a criatividade, performance e gambiarras dos seus LLMs
