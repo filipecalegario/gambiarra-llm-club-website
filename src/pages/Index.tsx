@@ -3,6 +3,7 @@ import { AboutSection } from "@/components/AboutSection";
 import { CompetitionsSection } from "@/components/CompetitionsSection";
 import { RewardsSection } from "@/components/RewardsSection";
 import { Footer } from "@/components/Footer";
+import { CopyContentButton } from "@/components/CopyContentButton";
 
 const Index = () => {
   const handleJoinClick = () => {
@@ -11,6 +12,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <CopyContentButton />
       <HeroSection onJoinClick={handleJoinClick} />
       <AboutSection />
       <CompetitionsSection />
