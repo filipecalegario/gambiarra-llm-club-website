@@ -10,7 +10,7 @@ export const CopyContentButton = () => {
   const handleCopy = async () => {
     try {
       // Busca o conteúdo do arquivo llm.txt
-      const response = await fetch('/llm.txt');
+      const response = await fetch('/llms.txt');
       if (!response.ok) {
         throw new Error('Não foi possível carregar o conteúdo');
       }
