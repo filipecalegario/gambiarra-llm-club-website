@@ -35,6 +35,36 @@ Mensais ou bimestrais, sempre de forma presencial.
 
 ==============================================
 
+MANIFESTO DO GAMBIARRA LLM CLUB
+
+Nós, curiosos, malucos e entusiastas das inteligências artificiais caseiras, declaramos: a revolução dos LLMs começa na gambiarra.
+
+Não temos datacenter. Temos um notebook com cooler que parece que vai voar, um PC cheio de esperança e uma vontade incontrolável de experimentar.
+
+Não buscamos vencer benchmarks, nem queremos bater nenhuma big tech com seus super modelos. Queremos construir, brincar e subverter os limites com criatividade e engenhosidade.
+
+Inspirados pelos pioneiros do Homebrew Computer Club, montamos nossos próprios setups, ajustamos parâmetros na unha e fazemos milagre com pouca VRAM. Aqui, cada prompt é um experimento e cada erro, uma descoberta.
+
+O Gambiarra LLM Club é um espaço de encontro para quem prefere rodar local, pensar diferente e aprender junto.
+
+Trazemos nossos modelos open source, conectamos máquinas, trocamos scripts, fazemos testes esquisitos e damos risada das respostas malucas.
+
+Os jogos, experimentos e competições são uma bela desculpa pra gente se reunir e aprender juntos.
+
+Nossas competições não premiam só quem tem a máquina mais potente, mas quem faz mais com menos, quem inventa o uso mais inusitado, quem encarna o personagem mais convincente ou escreve a história mais imprevisível. Valorizamos o improviso e a comunidade.
+
+Aqui, a gambiarra é uma arte.
+
+Se você já tentou rodar um LLM em hardware que mal abre o navegador, se já afinou prompts como quem afina um instrumento desafinado, ou se apenas tem curiosidade de ver até onde dá para ir com boas ideias e ferramentas livres, o clube é seu.
+
+Traga seu hardware. Traga seu modelo. Traga seu espírito maker.
+
+Junte-se ao Gambiarra LLM Club. A criatividade é nosso benchmark.
+
+@fcac 29/07/2025
+
+==============================================
+
 JOGOS, EXPERIMENTOS E COMPETIÇÕES
 
 🤖 Bot-a-Bot (Médio)
@@ -108,36 +138,6 @@ Em Preparação:
 📊 Dashboard de performance histórica
 🎮 Torneios online entre encontros
 🛒 Marketplace de prompts e configs
-
-==============================================
-
-MANIFESTO DO GAMBIARRA LLM CLUB
-
-Nós, curiosos, malucos e entusiastas das inteligências artificiais caseiras, declaramos: a revolução dos LLMs começa na gambiarra.
-
-Não temos datacenter. Temos um notebook com cooler que parece que vai voar, um PC cheio de esperança e uma vontade incontrolável de experimentar.
-
-Não buscamos vencer benchmarks, nem queremos bater nenhuma big tech com seus super modelos. Queremos construir, brincar e subverter os limites com criatividade e engenhosidade.
-
-Inspirados pelos pioneiros do Homebrew Computer Club, montamos nossos próprios setups, ajustamos parâmetros na unha e fazemos milagre com pouca VRAM. Aqui, cada prompt é um experimento e cada erro, uma descoberta.
-
-O Gambiarra LLM Club é um espaço de encontro para quem prefere rodar local, pensar diferente e aprender junto.
-
-Trazemos nossos modelos open source, conectamos máquinas, trocamos scripts, fazemos testes esquisitos e damos risada das respostas malucas.
-
-Os jogos, experimentos e competições são uma bela desculpa pra gente se reunir e aprender juntos.
-
-Nossas competições não premiam só quem tem a máquina mais potente, mas quem faz mais com menos, quem inventa o uso mais inusitado, quem encarna o personagem mais convincente ou escreve a história mais imprevisível. Valorizamos o improviso e a comunidade.
-
-Aqui, a gambiarra é uma arte.
-
-Se você já tentou rodar um LLM em hardware que mal abre o navegador, se já afinou prompts como quem afina um instrumento desafinado, ou se apenas tem curiosidade de ver até onde dá para ir com boas ideias e ferramentas livres, o clube é seu.
-
-Traga seu hardware. Traga seu modelo. Traga seu espírito maker.
-
-Junte-se ao Gambiarra LLM Club. A criatividade é nosso benchmark.
-
-@fcac 29/07/2025
 
 ==============================================
 
