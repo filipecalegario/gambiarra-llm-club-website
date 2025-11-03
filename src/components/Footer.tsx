@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { useState } from "react";
 
 interface FooterProps {
@@ -20,26 +27,26 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
             Junte-se à revolução dos LLMs caseiras. Traga suas ideias malucas e vamos fazer história!
           </p>
           <div className="flex flex-col gap-4 justify-center items-center">
-            <Button 
+            {/* <Button 
               onClick={onJoinClick}
               size="lg" 
               className="bg-gradient-to-r from-matrix to-code hover:from-code hover:to-matrix text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg border border-matrix shadow-lg hover:shadow-[var(--glow-green)] transition-all duration-300 transform hover:scale-105 text-center leading-tight"
             >
               <span className="block md:inline">TENHO INTERESSE EM PARTICIPAR 🚀</span>
-            </Button>
-            <Button 
+            </Button> */}
+            <Button
               onClick={() => window.open("http://www.cin.ufpe.br/~fcac/manifesto-gambiarra-llm-club.pdf", "_blank")}
               variant="outline"
-              size="lg" 
+              size="lg"
               className="border-2 border-neon text-neon hover:bg-neon hover:text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-300 text-center leading-tight"
             >
               <span className="block md:inline">LER MANIFESTO 📜</span>
             </Button>
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
               <DialogTrigger asChild>
-                <Button 
+                <Button
                   variant="outline"
-                  size="lg" 
+                  size="lg"
                   className="border-2 border-hack text-hack hover:bg-hack hover:text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-purple)] transition-all duration-300 text-center leading-tight"
                 >
                   <span className="block md:inline">QUERO PATROCINAR O 1º ENCONTRO 💰</span>
@@ -56,11 +63,9 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
                 </DialogHeader>
                 <div className="flex flex-col items-center space-y-4 py-4">
                   <div className="bg-terminal border border-matrix/30 rounded-lg p-4 w-full">
-                    <p className="text-center font-mono text-matrix font-bold text-lg">
-                      calegario@cin.ufpe.br
-                    </p>
+                    <p className="text-center font-mono text-matrix font-bold text-lg">calegario@cin.ufpe.br</p>
                   </div>
-                  <Button 
+                  <Button
                     onClick={() => {
                       navigator.clipboard.writeText("calegario@cin.ufpe.br");
                       setIsModalOpen(false);
@@ -74,7 +79,7 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
             </Dialog>
           </div>
         </div>
-        
+
         {/* Info Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
@@ -87,7 +92,7 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
               <p>💬 Discord em preparação</p>
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-bold text-foreground mb-4 flex items-center">
               <span className="text-neon mr-2">⚡</span>
@@ -99,7 +104,7 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
               <p>🔧 Espírito gambiarra</p>
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-bold text-foreground mb-4 flex items-center">
               <span className="text-hack mr-2">🎯</span>
@@ -113,7 +118,7 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
             </div>
           </div>
         </div>
-        
+
         {/* Bottom */}
         <div className="border-t border-border pt-8 text-center">
           <p className="text-muted-foreground text-sm mb-2">
