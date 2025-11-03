@@ -125,7 +125,22 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
             <span className="text-matrix font-mono">Gambiarra LLM Club</span> • Onde a criatividade encontra a IA
           </p>
           <p className="text-xs text-muted-foreground">
-            Feito com <span className="text-neon">♥</span> e muito café para a comunidade brasileira de IA
+            Organização:{" "}
+            <a href="https://www.cin.ufpe.br" target="_blank" rel="noopener noreferrer" className="text-matrix hover:underline">
+              Centro de Informática da UFPE
+            </a>
+            ,{" "}
+            <a href="https://www.portodigital.org/" target="_blank" rel="noopener noreferrer" className="text-matrix hover:underline">
+              Porto Digital
+            </a>
+            ,{" "}
+            <a href="https://www.cesar.school/" target="_blank" rel="noopener noreferrer" className="text-matrix hover:underline">
+              CESAR.school
+            </a>
+            {" "}e{" "}
+            <a href="https://www.tds.company/" target="_blank" rel="noopener noreferrer" className="text-matrix hover:underline">
+              tds.company
+            </a>
           </p>
         </div>
       </div>
