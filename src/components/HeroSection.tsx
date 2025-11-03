@@ -104,7 +104,10 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
         <div className="mt-12 text-muted-foreground">
           <p className="text-sm mb-2">👾 Encontros mensais • 🔧 Experimentação com LLMs locais • 🏆 Competições épicas</p>
           <p className="text-xs">
-            <span className="text-matrix">▸</span> Em breve: primeiro encontro oficial no Recife.
+            <span className="text-matrix">▸</span> Sábado, 8 de novembro de 2025, das 9h às 12h
+          </p>
+          <p className="text-xs">
+            <span className="text-matrix">▸</span> Sala Pontes, Porto Digital, Cais do Apolo, 222, Bairro do Recife
           </p>
         </div>
       </div>

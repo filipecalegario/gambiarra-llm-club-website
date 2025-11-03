@@ -103,12 +103,13 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
           <div>
             <h3 className="text-lg font-bold text-foreground mb-4 flex items-center">
               <span className="text-hack mr-2">🎯</span>
-              Próximos Passos
+              Primeiro Encontro
             </h3>
             <div className="space-y-2 text-muted-foreground text-sm">
-              <p>📅 Primeiro encontro</p>
-              <p>🏗️ Setup da infraestrutura</p>
-              <p>🎮 Primeiras competições</p>
+              <p>📅 8 de novembro de 2025</p>
+              <p>🕘 9h às 12h</p>
+              <p>📍 Sala Pontes, Porto Digital</p>
+              <p>Cais do Apolo, 222, Recife</p>
             </div>
           </div>
         </div>
