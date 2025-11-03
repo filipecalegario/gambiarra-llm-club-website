@@ -54,13 +54,13 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
           >
             <span className="block md:inline">🎟️ INSCRIÇÕES PARA O 1º ENCONTRO</span>
           </Button>
-          <Button
+          {/* <Button
             onClick={onJoinClick}
             size="lg"
             className="bg-gradient-to-r from-matrix to-code hover:from-code hover:to-matrix text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg border border-matrix shadow-lg hover:shadow-[var(--glow-green)] transition-all duration-300 transform hover:scale-105 text-center leading-tight"
           >
             <span className="block md:inline">TENHO INTERESSE EM PARTICIPAR</span>
-          </Button>
+          </Button> */}
           <Button
             onClick={() => window.open("http://www.cin.ufpe.br/~fcac/manifesto-gambiarra-llm-club.pdf", "_blank")}
             variant="outline"
