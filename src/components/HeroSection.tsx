@@ -40,10 +40,10 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
         </div>
         
         <div className="flex flex-col gap-4 justify-center items-center">
-          <Button 
+          	<Button 
             onClick={() => window.open("https://www.sympla.com.br/evento/1-encontro-do-gambiarra-llm-club/3200149", "_blank")}
             size="lg" 
-            className="bg-gradient-to-r from-neon to-hack hover:from-hack hover:to-neon text-terminal font-bold px-2 md:px-8 py-6 md:py-8 text-base md:text-xl rounded-lg border-2 border-neon shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-300 transform hover:scale-110 text-center leading-tight animate-pulse-slow"
+            className="bg-gradient-to-r from-neon to-hack hover:from-hack hover:to-neon text-terminal font-bold px-2 md:px-8 py-6 md:py-8 text-base md:text-xl rounded-lg border-2 border-neon shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-300 transform hover:scale-110 text-center leading-tight animate-[pulse_5s_cubic-bezier(0.4,0,0.6,1)_infinite]"
           >
             <span className="block md:inline">🎟️ INSCRIÇÕES PARA O 1º ENCONTRO</span>
           </Button>
