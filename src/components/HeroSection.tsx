@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/dialog";
 import { useState } from "react";
 import heroImage from "@/assets/hero-gambiarra.jpg";
+import gambiarraLogo from "@/assets/gambiarra-logo.png";
 
 interface HeroSectionProps {
   onJoinClick: () => void;
@@ -34,10 +35,11 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="mb-8">
-          <h1 className="text-6xl md:text-8xl font-bold mb-4 text-transparent bg-gradient-to-r from-matrix to-neon bg-clip-text animate-pulse">
-            GAMBIARRA
-          </h1>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-code">LLM CLUB</h2>
+          <img 
+            src={gambiarraLogo} 
+            alt="Gambiarra LLM Club" 
+            className="w-full max-w-3xl mx-auto mb-6 animate-[pulse_5s_cubic-bezier(0.4,0,0.6,1)_infinite]"
+          />
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             O primeiro clube de <span className="text-matrix font-semibold">LLMs caseiras</span> do Brasil. Traga seus
             LLMs locais, faça suas gambiarras e vamos nos divertir!
