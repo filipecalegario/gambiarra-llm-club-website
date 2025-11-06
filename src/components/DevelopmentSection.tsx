@@ -8,6 +8,12 @@ const developmentResources = [
     url: "https://github.com/filipecalegario/gambiarra-plataforma",
     icon: Github,
   },
+  {
+    title: "Site Gambiarra.club",
+    description: "O código fonte deste site que você está vendo agora! 🤯 Meta né? Contribua via Pull Request e ajude a melhorar o site da comunidade.",
+    url: "https://github.com/filipecalegario/gambiarra-llm-club-website",
+    icon: Github,
+  },
 ];
 
 export const DevelopmentSection = () => {
