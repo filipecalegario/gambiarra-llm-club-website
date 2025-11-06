@@ -38,7 +38,7 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
           <img 
             src={gambiarraLogo} 
             alt="Gambiarra LLM Club" 
-            className="w-full max-w-3xl mx-auto mb-6 animate-[pulse_5s_cubic-bezier(0.4,0,0.6,1)_infinite]"
+            className="w-full max-w-3xl mx-auto mb-6"
           />
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             O primeiro clube de <span className="text-matrix font-semibold">LLMs caseiras</span> do Brasil. Traga seus
@@ -52,7 +52,7 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
               window.open("https://www.sympla.com.br/evento/1-encontro-do-gambiarra-llm-club/3200149", "_blank")
             }
             size="lg"
-            className="bg-gradient-to-r from-neon to-hack hover:from-hack hover:to-neon text-terminal font-bold px-2 md:px-8 py-6 md:py-8 text-base md:text-xl rounded-lg border-2 border-neon shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-1000 transform hover:scale-110 text-center leading-tight animate-[pulse_5s_cubic-bezier(0.4,0,0.6,1)_infinite]"
+            className="bg-gradient-to-r from-neon to-hack hover:from-hack hover:to-neon text-terminal font-bold px-2 md:px-8 py-6 md:py-8 text-base md:text-xl rounded-lg  shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-1000 transform hover:scale-110 text-center leading-tight"
           >
             <span className="block md:inline">🎟️ INSCRIÇÕES PARA O 1º ENCONTRO</span>
           </Button>
