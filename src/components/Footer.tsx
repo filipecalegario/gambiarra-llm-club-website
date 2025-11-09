@@ -54,12 +54,12 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
               </DialogTrigger>
               <DialogContent className="sm:max-w-md">
                 <DialogHeader>
-                  <DialogTitle className="text-center text-xl font-bold text-foreground">
-                    Patrocínio do 1º Encontro
-                  </DialogTitle>
-                  <DialogDescription className="text-center text-muted-foreground mt-4">
-                    Para patrocinar o primeiro encontro do Gambiarra LLM Club, envie um e-mail para:
-                  </DialogDescription>
+                <DialogTitle className="text-center text-xl font-bold text-foreground">
+                  Patrocínio do 2º Encontro
+                </DialogTitle>
+                <DialogDescription className="text-center text-muted-foreground mt-4">
+                  Para patrocinar o segundo encontro do Gambiarra LLM Club, envie um e-mail para:
+                </DialogDescription>
                 </DialogHeader>
                 <div className="flex flex-col items-center space-y-4 py-4">
                   <div className="bg-terminal border border-matrix/30 rounded-lg p-4 w-full">
@@ -108,10 +108,10 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
           <div>
             <h3 className="text-lg font-bold text-foreground mb-4 flex items-center">
               <span className="text-hack mr-2">🎯</span>
-              Primeiro Encontro
+              Segundo Encontro
             </h3>
             <div className="space-y-2 text-muted-foreground text-sm">
-              <p>📅 8 de novembro de 2025</p>
+              <p>📅 13 de dezembro de 2025</p>
               <p>🕘 9h às 12h</p>
               <p>📍 Sala Pontes, Porto Digital</p>
               <p>Cais do Apolo, 222, Recife</p>

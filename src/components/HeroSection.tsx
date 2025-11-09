@@ -49,12 +49,12 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
         <div className="flex flex-col gap-4 justify-center items-center">
           <Button
             onClick={() =>
-              window.open("https://www.sympla.com.br/evento/1-encontro-do-gambiarra-llm-club/3200149", "_blank")
+              window.open("https://www.sympla.com.br/evento/2-encontro-do-gambiarra-llm-club/3209973", "_blank")
             }
             size="lg"
             className="bg-gradient-to-r from-neon to-hack hover:from-hack hover:to-neon text-terminal font-bold px-2 md:px-8 py-6 md:py-8 text-base md:text-xl rounded-lg  shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-1000 transform hover:scale-110 text-center leading-tight"
           >
-            <span className="block md:inline">🎟️ INSCRIÇÕES PARA O 1º ENCONTRO</span>
+            <span className="block md:inline">🎟️ INSCRIÇÕES PARA O 2º ENCONTRO</span>
           </Button>
           {/* <Button
             onClick={onJoinClick}
@@ -84,10 +84,10 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
             <DialogContent className="sm:max-w-md">
               <DialogHeader>
                 <DialogTitle className="text-center text-xl font-bold text-foreground">
-                  Patrocínio do 1º Encontro
+                  Patrocínio do 2º Encontro
                 </DialogTitle>
                 <DialogDescription className="text-center text-muted-foreground mt-4">
-                  Para patrocinar o primeiro encontro do Gambiarra LLM Club, envie um e-mail para:
+                  Para patrocinar o segundo encontro do Gambiarra LLM Club, envie um e-mail para:
                 </DialogDescription>
               </DialogHeader>
               <div className="flex flex-col items-center space-y-4 py-4">
@@ -113,7 +113,7 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
             👾 Encontros mensais • 🔧 Experimentação com LLMs locais • 🏆 Competições épicas
           </p>
           <p className="text-xs">
-            <span className="text-matrix">▸</span> Sábado, 8 de novembro de 2025, das 9h às 12h
+            <span className="text-matrix">▸</span> Sábado, 13 de dezembro de 2025, das 9h às 12h
           </p>
           <p className="text-xs">
             <span className="text-matrix">▸</span> Sala Pontes, Porto Digital, Cais do Apolo, 222, Bairro do Recife
