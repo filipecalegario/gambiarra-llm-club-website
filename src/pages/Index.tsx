@@ -3,6 +3,7 @@ import { AboutSection } from "@/components/AboutSection";
 import { CompetitionsSection } from "@/components/CompetitionsSection";
 import { RewardsSection } from "@/components/RewardsSection";
 import { DevelopmentSection } from "@/components/DevelopmentSection";
+import { MeetingsSection } from "@/components/MeetingsSection";
 import { Footer } from "@/components/Footer";
 import { CopyContentButton } from "@/components/CopyContentButton";
 
@@ -19,6 +20,7 @@ const Index = () => {
       <CompetitionsSection />
       <RewardsSection />
       <DevelopmentSection />
+      <MeetingsSection />
       <Footer onJoinClick={handleJoinClick} />
     </div>
   );

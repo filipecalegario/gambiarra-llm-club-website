@@ -56,6 +56,16 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
           >
             <span className="block md:inline">🎟️ INSCRIÇÕES PARA O 2º ENCONTRO</span>
           </Button>
+          <Button
+            onClick={() => {
+              document.getElementById('encontros')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            variant="outline"
+            size="lg"
+            className="border-2 border-code text-code hover:bg-code hover:text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-green)] transition-all duration-300 text-center leading-tight"
+          >
+            <span className="block md:inline">📸 COMO FOI O 1º ENCONTRO</span>
+          </Button>
           {/* <Button
             onClick={onJoinClick}
             size="lg"
