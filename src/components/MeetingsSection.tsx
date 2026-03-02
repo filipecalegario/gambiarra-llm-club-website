@@ -17,6 +17,47 @@ export const MeetingsSection = () => {
             <CardHeader>
               <CardTitle className="text-2xl text-foreground flex items-center gap-2">
                 <Calendar className="text-matrix" />
+                2º Encontro - Dezembro 2025
+              </CardTitle>
+              <CardDescription className="text-muted-foreground">
+                Nosso segundo encontro consolidou a comunidade! Confira os destaques:
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="flex items-start gap-3">
+                <Users className="text-neon mt-1 flex-shrink-0" size={20} />
+                <div>
+                  <h4 className="font-semibold text-foreground">Crescimento</h4>
+                  <p className="text-sm text-muted-foreground">
+                    A comunidade cresceu e mais entusiastas de IA se juntaram para compartilhar experiências com LLMs locais
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Wrench className="text-hack mt-1 flex-shrink-0" size={20} />
+                <div>
+                  <h4 className="font-semibold text-foreground">Experimentação</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Novas gambiarras e demonstrações práticas de LLMs rodando em diferentes configurações
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Trophy className="text-code mt-1 flex-shrink-0" size={20} />
+                <div>
+                  <h4 className="font-semibold text-foreground">Competições</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Mais desafios criativos que testaram os limites dos LLMs caseiros dos participantes
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-background/50 border-matrix/30 hover:border-matrix transition-all duration-300">
+            <CardHeader>
+              <CardTitle className="text-2xl text-foreground flex items-center gap-2">
+                <Calendar className="text-matrix" />
                 1º Encontro - Novembro 2025
               </CardTitle>
               <CardDescription className="text-muted-foreground">
