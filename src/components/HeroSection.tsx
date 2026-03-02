@@ -41,20 +41,19 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
             className="w-full max-w-3xl mx-auto mb-6"
           />
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            O primeiro clube de <span className="text-matrix font-semibold">LLMs caseiras</span> do Brasil. Traga seus
-            LLMs locais, faça suas gambiarras e vamos nos divertir!
+            O primeiro clube de <span className="text-matrix font-semibold">LLMs caseiras</span> do Brasil. Aprenda a rodar IAs/LLMs localmente no seu computador e coloque-as para competir em desafios criativos! 🔧🤖
           </p>
         </div>
 
         <div className="flex flex-col gap-4 justify-center items-center">
           <Button
             onClick={() =>
-              window.open("https://www.sympla.com.br/evento/2-encontro-do-gambiarra-llm-club/3209973", "_blank")
+              window.open("https://www.sympla.com.br/evento/3-encontro-do-gambiarra-llm-club/3331154", "_blank")
             }
             size="lg"
             className="bg-gradient-to-r from-neon to-hack hover:from-hack hover:to-neon text-terminal font-bold px-2 md:px-8 py-6 md:py-8 text-base md:text-xl rounded-lg  shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-1000 transform hover:scale-110 text-center leading-tight"
           >
-            <span className="block md:inline">🎟️ INSCRIÇÕES PARA O 2º ENCONTRO</span>
+            <span className="block md:inline">🎟️ INSCRIÇÕES PARA O 3º ENCONTRO</span>
           </Button>
           <Button
             onClick={() => {
@@ -64,7 +63,7 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
             size="lg"
             className="border-2 border-code text-code hover:bg-code hover:text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-green)] transition-all duration-300 text-center leading-tight"
           >
-            <span className="block md:inline">📸 COMO FOI O 1º ENCONTRO</span>
+            <span className="block md:inline">📸 COMO FORAM OS ÚLTIMOS ENCONTROS</span>
           </Button>
           {/* <Button
             onClick={onJoinClick}
@@ -94,10 +93,10 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
             <DialogContent className="sm:max-w-md">
               <DialogHeader>
                 <DialogTitle className="text-center text-xl font-bold text-foreground">
-                  Patrocínio do 2º Encontro
+                  Patrocínio do 3º Encontro
                 </DialogTitle>
                 <DialogDescription className="text-center text-muted-foreground mt-4">
-                  Para patrocinar o segundo encontro do Gambiarra LLM Club, envie um e-mail para:
+                  Para patrocinar o terceiro encontro do Gambiarra LLM Club, envie um e-mail para:
                 </DialogDescription>
               </DialogHeader>
               <div className="flex flex-col items-center space-y-4 py-4">
@@ -123,7 +122,7 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
             👾 Encontros mensais • 🔧 Experimentação com LLMs locais • 🏆 Competições épicas
           </p>
           <p className="text-xs">
-            <span className="text-matrix">▸</span> Sábado, 13 de dezembro de 2025, das 9h às 12h
+            <span className="text-matrix">▸</span> Sábado, 14 de março de 2026, das 9h às 12h
           </p>
           <p className="text-xs">
             <span className="text-matrix">▸</span> Sala Pontes, Porto Digital, Cais do Apolo, 222, Bairro do Recife
