@@ -1,70 +1,107 @@
 import techCollage from "@/assets/tech-collage.jpg";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+
+const highlights = [
+  {
+    ascii: "[>_]",
+    title: "LLMs Locais",
+    desc: "Traga seu setup, por mais simples que seja.",
+  },
+  {
+    ascii: "{!}",
+    title: "Competicoes Criativas",
+    desc: "Desafios que testam mais que performance bruta.",
+  },
+  {
+    ascii: "</>",
+    title: "Open Source",
+    desc: "Modelos, scripts, ferramentas livres.",
+  },
+  {
+    ascii: "[ ]",
+    title: "Comunidade",
+    desc: "Troca de conhecimento, encontros presenciais.",
+  },
+];
 
 export const AboutSection = () => {
+  const sectionRef = useScrollReveal<HTMLElement>();
+
   return (
-    <section className="py-20 px-6 bg-card">
+    <section
+      id="clube"
+      ref={sectionRef}
+      className="py-24 px-6 bg-card"
+    >
       <div className="max-w-6xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-transparent bg-gradient-to-r from-matrix to-code bg-clip-text">
-              O QUE É O CLUBE?
+        <div className="grid lg:grid-cols-5 gap-12 items-start">
+          {/* Text — 3 cols */}
+          <div className="lg:col-span-3">
+            <h2 className="reveal font-display text-3xl md:text-5xl text-amber mb-8 glitch-hover inline-block">
+              O QUE E O CLUBE?
             </h2>
-            
-            <div className="space-y-6 text-lg text-muted-foreground">
+
+            <div className="reveal space-y-5 font-body text-foreground/75 text-base md:text-lg leading-relaxed">
               <p>
-                O <span className="text-matrix font-semibold">Gambiarra LLM Club</span> é inspirado no <span className="text-matrix font-semibold"><a href="https://en.wikipedia.org/wiki/Homebrew_Computer_Club">Homebrew Computer Club</a></span>, o lendário clube de hobbistas que construiam seus próprios computadores na época dos mainframes. <br />
-                <br />
-                Somos uma comunidade de entusiastas que rodam seus modelos de linguagem localmente, ajustando as configurações para alcançar o melhor resultado que der. <br /> 
-                <br />
-                Não temos a pretensão de bater os modelos das big techs. Aqui, a criatividade e a engenhosidade valem mais que os melhores rankings dos benchmarks.
+                O{" "}
+                <span className="text-amber font-semibold">
+                  Gambiarra LLM Club
+                </span>{" "}
+                e inspirado no{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Homebrew_Computer_Club"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan hover:underline underline-offset-4"
+                >
+                  Homebrew Computer Club
+                </a>
+                , o lendario clube de hobbistas que construiam seus proprios
+                computadores na epoca dos mainframes.
               </p>
-              
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <span className="text-neon text-xl">🔧</span>
-                  <div>
-                    <h3 className="text-foreground font-semibold mb-1">Rodando LLMs Locais</h3>
-                    <p className="text-sm">Traga seu setup, por mais simples que seja. A gambiarra é bem-vinda!</p>
-                  </div>
+              <p>
+                Somos uma comunidade de entusiastas que rodam modelos de
+                linguagem localmente, ajustando configuracoes para alcancar o
+                melhor resultado possivel. Aqui, criatividade e engenhosidade
+                valem mais que rankings de benchmarks.
+              </p>
+            </div>
+
+            {/* Highlights grid */}
+            <div className="reveal grid grid-cols-2 gap-4 mt-10">
+              {highlights.map((h, i) => (
+                <div
+                  key={i}
+                  className="group p-4 rounded-sm border border-border hover:border-amber/30 transition-all duration-300 bg-background/40"
+                >
+                  <span className="font-mono text-lg text-terminal font-bold block mb-2 group-hover:text-amber transition-colors">
+                    {h.ascii}
+                  </span>
+                  <h3 className="font-body font-semibold text-foreground text-sm mb-1">
+                    {h.title}
+                  </h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    {h.desc}
+                  </p>
                 </div>
-                
-                <div className="flex items-start space-x-3">
-                  <span className="text-hack text-xl">🏆</span>
-                  <div>
-                    <h3 className="text-foreground font-semibold mb-1">Competições Criativas</h3>
-                    <p className="text-sm">Desafios únicos que testam mais que performance bruta.</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-3">
-                  <span className="text-matrix text-xl">🤝</span>
-                  <div>
-                    <h3 className="text-foreground font-semibold mb-1">Comunidade</h3>
-                    <p className="text-sm">Troca de conhecimento, ferramentas, prompts, LLMs open source.</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-3">
-                  <span className="text-neon text-xl">📅</span>
-                  <div>
-                    <h3 className="text-foreground font-semibold mb-1">Encontros Regulares</h3>
-                    <p className="text-sm">Mensais ou bimestrais, sempre de forma presencial.</p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-          
-          <div className="relative">
-            <img 
-              src={techCollage} 
-              alt="Tech Collage" 
-              className="w-full rounded-lg shadow-2xl border border-matrix/30"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-terminal/60 to-transparent rounded-lg"></div>
+
+          {/* Image — 2 cols */}
+          <div className="reveal lg:col-span-2 relative">
+            <div className="tape-strip tape-strip-right">
+              <img
+                src={techCollage}
+                alt="Gambiarra LLM Club em acao"
+                className="w-full rounded-sm shadow-2xl shadow-black/40 border border-amber/10"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent rounded-sm" />
+            </div>
             <div className="absolute bottom-4 left-4 right-4">
-              <p className="text-matrix font-mono text-sm bg-terminal/80 p-2 rounded border border-matrix/50">
-                <span className="text-neon">$</span> ./run_local_llm --creativity=max --gambiarra=true
+              <p className="font-mono text-xs bg-background/80 backdrop-blur-sm p-3 rounded-sm border border-amber/20 text-terminal">
+                <span className="text-amber">$</span> ./run_local_llm
+                --creativity=max --gambiarra=true
               </p>
             </div>
           </div>

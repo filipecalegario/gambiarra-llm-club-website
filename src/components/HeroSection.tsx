@@ -15,100 +15,118 @@ interface HeroSectionProps {
   onJoinClick: () => void;
 }
 
+const marqueeText =
+  "A CRIATIVIDADE E NOSSO BENCHMARK /// GAMBIARRA E UMA ARTE /// CADA PROMPT E UM EXPERIMENTO /// FAZEMOS MILAGRE COM POUCA VRAM /// RODAR LOCAL, PENSAR DIFERENTE /// ";
+
 export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSponsorOpen, setSponsorOpen] = useState(false);
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+      {/* Background Image with warm overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-terminal/90 via-terminal/60 to-transparent"></div>
-      </div>
-
-      {/* Matrix Rain Effect */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="matrix-rain"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/80 to-background" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <div className="mb-8">
-          <img 
-            src={gambiarraLogo} 
-            alt="Gambiarra LLM Club" 
-            className="w-full max-w-3xl mx-auto mb-6"
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-20">
+        {/* Logo */}
+        <div className="mb-6 animate-float">
+          <img
+            src={gambiarraLogo}
+            alt="Gambiarra LLM Club"
+            className="w-full max-w-2xl mx-auto"
           />
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            O primeiro clube de <span className="text-matrix font-semibold">LLMs caseiras</span> do Brasil. Aprenda a rodar IAs/LLMs localmente no seu computador e coloque-as para competir em desafios criativos! 🔧🤖
+        </div>
+
+        {/* Tagline */}
+        <p className="font-body text-lg md:text-xl text-foreground/70 mb-10 max-w-xl mx-auto leading-relaxed">
+          O primeiro clube de{" "}
+          <span className="text-amber font-semibold">LLMs caseiras</span> do
+          Brasil. Aprenda a rodar IAs localmente e coloque-as para competir!
+        </p>
+
+        {/* Primary CTA */}
+        <Button
+          onClick={() =>
+            window.open(
+              "https://www.sympla.com.br/evento/3-encontro-do-gambiarra-llm-club/3331154",
+              "_blank"
+            )
+          }
+          size="lg"
+          className="pulse-glow bg-amber hover:bg-amber/90 text-background font-display text-base md:text-lg px-8 md:px-12 py-6 md:py-7 rounded-sm tracking-wide transition-all duration-300 hover:scale-105"
+        >
+          INSCRICOES 3o ENCONTRO
+        </Button>
+
+        {/* Date & Location */}
+        <div className="mt-8 space-y-1">
+          <p className="font-mono text-xs md:text-sm text-muted-foreground">
+            <span className="text-terminal">&gt;</span> Sabado, 14 de marco de
+            2026, 9h as 12h
+          </p>
+          <p className="font-mono text-xs md:text-sm text-muted-foreground">
+            <span className="text-terminal">&gt;</span> Sala Pontes, Porto
+            Digital, Cais do Apolo, 222, Recife
           </p>
         </div>
 
-        <div className="flex flex-col gap-4 justify-center items-center">
-          <Button
+        {/* Secondary links */}
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
+          <button
             onClick={() =>
-              window.open("https://www.sympla.com.br/evento/3-encontro-do-gambiarra-llm-club/3331154", "_blank")
+              document
+                .querySelector("#manifesto")
+                ?.scrollIntoView({ behavior: "smooth" })
             }
-            size="lg"
-            className="bg-gradient-to-r from-neon to-hack hover:from-hack hover:to-neon text-terminal font-bold px-2 md:px-8 py-6 md:py-8 text-base md:text-xl rounded-lg  shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-1000 transform hover:scale-110 text-center leading-tight"
+            className="font-mono text-xs text-muted-foreground hover:text-amber transition-colors underline underline-offset-4 decoration-amber/30 hover:decoration-amber"
           >
-            <span className="block md:inline">🎟️ INSCRIÇÕES PARA O 3º ENCONTRO</span>
-          </Button>
-          <Button
-            onClick={() => {
-              document.getElementById('encontros')?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            variant="outline"
-            size="lg"
-            className="border-2 border-code text-code hover:bg-code hover:text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-green)] transition-all duration-300 text-center leading-tight"
+            ler manifesto
+          </button>
+          <span className="text-muted-foreground/30 text-xs">//</span>
+          <button
+            onClick={() =>
+              document
+                .querySelector("#encontros")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="font-mono text-xs text-muted-foreground hover:text-amber transition-colors underline underline-offset-4 decoration-amber/30 hover:decoration-amber"
           >
-            <span className="block md:inline">📸 COMO FORAM OS ÚLTIMOS ENCONTROS</span>
-          </Button>
-          {/* <Button
-            onClick={onJoinClick}
-            size="lg"
-            className="bg-gradient-to-r from-matrix to-code hover:from-code hover:to-matrix text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg border border-matrix shadow-lg hover:shadow-[var(--glow-green)] transition-all duration-300 transform hover:scale-105 text-center leading-tight"
-          >
-            <span className="block md:inline">TENHO INTERESSE EM PARTICIPAR</span>
-          </Button> */}
-          <Button
-            onClick={() => window.open("http://www.cin.ufpe.br/~fcac/manifesto-gambiarra-llm-club.pdf", "_blank")}
-            variant="outline"
-            size="lg"
-            className="border-2 border-neon text-neon hover:bg-neon hover:text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-300 text-center leading-tight"
-          >
-            <span className="block md:inline">LER MANIFESTO 📜</span>
-          </Button>
-          <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+            encontros anteriores
+          </button>
+          <span className="text-muted-foreground/30 text-xs">//</span>
+          <Dialog open={isSponsorOpen} onOpenChange={setSponsorOpen}>
             <DialogTrigger asChild>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-2 border-hack text-hack hover:bg-hack hover:text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-purple)] transition-all duration-300 text-center leading-tight"
-              >
-                <span className="block md:inline">QUERO PATROCINAR O GRUPO 💰</span>
-              </Button>
+              <button className="font-mono text-xs text-muted-foreground hover:text-amber transition-colors underline underline-offset-4 decoration-amber/30 hover:decoration-amber">
+                patrocinar
+              </button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-md">
+            <DialogContent className="sm:max-w-md bg-card border-amber/20">
               <DialogHeader>
-                <DialogTitle className="text-center text-xl font-bold text-foreground">
-                  Patrocínio do 3º Encontro
+                <DialogTitle className="text-center text-xl font-display text-amber">
+                  Patrocinio do 3o Encontro
                 </DialogTitle>
                 <DialogDescription className="text-center text-muted-foreground mt-4">
-                  Para patrocinar o terceiro encontro do Gambiarra LLM Club, envie um e-mail para:
+                  Para patrocinar o terceiro encontro do Gambiarra LLM Club,
+                  envie um e-mail para:
                 </DialogDescription>
               </DialogHeader>
               <div className="flex flex-col items-center space-y-4 py-4">
-                <div className="bg-terminal border border-matrix/30 rounded-lg p-4 w-full">
-                  <p className="text-center font-mono text-matrix font-bold text-lg">calegario@cin.ufpe.br</p>
+                <div className="bg-background border border-amber/20 rounded-sm p-4 w-full">
+                  <p className="text-center font-mono text-amber font-bold text-lg">
+                    calegario@cin.ufpe.br
+                  </p>
                 </div>
                 <Button
                   onClick={() => {
                     navigator.clipboard.writeText("calegario@cin.ufpe.br");
-                    setIsModalOpen(false);
+                    setSponsorOpen(false);
                   }}
-                  className="bg-gradient-to-r from-matrix to-code hover:from-code hover:to-matrix text-terminal font-bold"
+                  className="bg-amber hover:bg-amber/90 text-background font-mono font-bold text-sm"
                 >
                   Copiar E-mail
                 </Button>
@@ -116,17 +134,19 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
             </DialogContent>
           </Dialog>
         </div>
+      </div>
 
-        <div className="mt-12 text-muted-foreground">
-          <p className="text-sm mb-2">
-            👾 Encontros mensais • 🔧 Experimentação com LLMs locais • 🏆 Competições épicas
-          </p>
-          <p className="text-xs">
-            <span className="text-matrix">▸</span> Sábado, 14 de março de 2026, das 9h às 12h
-          </p>
-          <p className="text-xs">
-            <span className="text-matrix">▸</span> Sala Pontes, Porto Digital, Cais do Apolo, 222, Bairro do Recife
-          </p>
+      {/* Marquee Ticker at bottom */}
+      <div className="absolute bottom-0 left-0 right-0 border-t border-amber/10 bg-background/60 backdrop-blur-sm py-3 overflow-hidden">
+        <div className="marquee-track">
+          <span className="font-mono text-[10px] tracking-[0.3em] text-amber/40 whitespace-nowrap px-4">
+            {marqueeText}
+            {marqueeText}
+          </span>
+          <span className="font-mono text-[10px] tracking-[0.3em] text-amber/40 whitespace-nowrap px-4">
+            {marqueeText}
+            {marqueeText}
+          </span>
         </div>
       </div>
     </section>

@@ -14,63 +14,65 @@ interface FooterProps {
 }
 
 export const Footer = ({ onJoinClick }: FooterProps) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSponsorOpen, setSponsorOpen] = useState(false);
+
   return (
-    <footer className="bg-terminal border-t border-matrix/30 py-16 px-6">
-      <div className="max-w-6xl mx-auto">
-        {/* CTA Principal */}
-        <div className="text-center mb-12 bg-gradient-to-r from-card/50 to-muted/20 p-8 rounded-lg border border-matrix/30 backdrop-blur-sm">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-gradient-to-r from-matrix to-neon bg-clip-text">
+    <footer className="bg-background border-t border-border">
+      {/* CTA strip */}
+      <div className="py-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-display text-3xl md:text-4xl text-amber mb-4 glitch-hover inline-block">
             PRONTO PARA A GAMBIARRA?
           </h2>
-          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Junte-se à revolução dos LLMs caseiras. Traga suas ideias malucas e vamos fazer história!
+          <p className="font-body text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
+            Junte-se a revolucao dos LLMs caseiras. Traga suas ideias malucas e
+            vamos fazer historia!
           </p>
-          <div className="flex flex-col gap-4 justify-center items-center">
-            {/* <Button 
-              onClick={onJoinClick}
-              size="lg" 
-              className="bg-gradient-to-r from-matrix to-code hover:from-code hover:to-matrix text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg border border-matrix shadow-lg hover:shadow-[var(--glow-green)] transition-all duration-300 transform hover:scale-105 text-center leading-tight"
-            >
-              <span className="block md:inline">TENHO INTERESSE EM PARTICIPAR 🚀</span>
-            </Button> */}
+          <div className="flex flex-wrap items-center justify-center gap-4">
             <Button
-              onClick={() => window.open("http://www.cin.ufpe.br/~fcac/manifesto-gambiarra-llm-club.pdf", "_blank")}
-              variant="outline"
+              onClick={() =>
+                window.open(
+                  "https://www.sympla.com.br/evento/3-encontro-do-gambiarra-llm-club/3331154",
+                  "_blank"
+                )
+              }
               size="lg"
-              className="border-2 border-neon text-neon hover:bg-neon hover:text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-orange)] transition-all duration-300 text-center leading-tight"
+              className="bg-amber hover:bg-amber/90 text-background font-display tracking-wide px-8 py-6 rounded-sm"
             >
-              <span className="block md:inline">LER MANIFESTO 📜</span>
+              INSCRICOES 3o ENCONTRO
             </Button>
-            <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+            <Dialog open={isSponsorOpen} onOpenChange={setSponsorOpen}>
               <DialogTrigger asChild>
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-2 border-hack text-hack hover:bg-hack hover:text-terminal font-bold px-2 md:px-8 py-4 md:py-6 text-sm md:text-lg rounded-lg shadow-lg hover:shadow-[var(--glow-purple)] transition-all duration-300 text-center leading-tight"
+                  className="border-amber/30 text-amber hover:bg-amber/10 font-mono text-xs tracking-wider px-6 py-6 rounded-sm"
                 >
-                  <span className="block md:inline">QUERO PATROCINAR O CLUBE 💰</span>
+                  PATROCINAR O CLUBE
                 </Button>
               </DialogTrigger>
-              <DialogContent className="sm:max-w-md">
+              <DialogContent className="sm:max-w-md bg-card border-amber/20">
                 <DialogHeader>
-                <DialogTitle className="text-center text-xl font-bold text-foreground">
-                   Patrocínio do 3º Encontro
-                 </DialogTitle>
-                 <DialogDescription className="text-center text-muted-foreground mt-4">
-                   Para patrocinar o terceiro encontro do Gambiarra LLM Club, envie um e-mail para:
-                </DialogDescription>
+                  <DialogTitle className="text-center text-xl font-display text-amber">
+                    Patrocinio do 3o Encontro
+                  </DialogTitle>
+                  <DialogDescription className="text-center text-muted-foreground mt-4">
+                    Para patrocinar o terceiro encontro do Gambiarra LLM Club,
+                    envie um e-mail para:
+                  </DialogDescription>
                 </DialogHeader>
                 <div className="flex flex-col items-center space-y-4 py-4">
-                  <div className="bg-terminal border border-matrix/30 rounded-lg p-4 w-full">
-                    <p className="text-center font-mono text-matrix font-bold text-lg">calegario@cin.ufpe.br</p>
+                  <div className="bg-background border border-amber/20 rounded-sm p-4 w-full">
+                    <p className="text-center font-mono text-amber font-bold text-lg">
+                      calegario@cin.ufpe.br
+                    </p>
                   </div>
                   <Button
                     onClick={() => {
                       navigator.clipboard.writeText("calegario@cin.ufpe.br");
-                      setIsModalOpen(false);
+                      setSponsorOpen(false);
                     }}
-                    className="bg-gradient-to-r from-matrix to-code hover:from-code hover:to-matrix text-terminal font-bold"
+                    className="bg-amber hover:bg-amber/90 text-background font-mono font-bold text-sm"
                   >
                     Copiar E-mail
                   </Button>
@@ -79,82 +81,118 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
             </Dialog>
           </div>
         </div>
+      </div>
 
-        {/* Info Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+      {/* Circuit divider */}
+      <div className="circuit-divider" />
+
+      {/* Info grid */}
+      <div className="py-12 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+          {/* Next meeting */}
           <div>
-            <h3 className="text-lg font-bold text-foreground mb-4 flex items-center">
-              <span className="text-matrix mr-2">🤖</span>
-              Contato
+            <h3 className="font-display text-sm text-amber mb-4">
+              PROXIMO ENCONTRO
             </h3>
-            <div className="space-y-2 text-muted-foreground text-sm">
-              <p>📧 Em breve: canal oficial</p>
-              <p>💬 Discord em preparação</p>
+            <div className="space-y-2 font-mono text-xs text-muted-foreground">
+              <p>
+                <span className="text-terminal">&gt;</span> 14 de Marco de 2026
+              </p>
+              <p>
+                <span className="text-terminal">&gt;</span> 9h as 12h
+              </p>
+              <p>
+                <span className="text-terminal">&gt;</span> Sala Pontes, Porto
+                Digital
+              </p>
+              <p className="text-muted-foreground/60 pl-3">
+                Cais do Apolo, 222, Recife
+              </p>
             </div>
           </div>
 
+          {/* Contact */}
           <div>
-            <h3 className="text-lg font-bold text-foreground mb-4 flex items-center">
-              <span className="text-neon mr-2">⚡</span>
-              Requisitos
-            </h3>
-            <div className="space-y-2 text-muted-foreground text-sm">
-              <p>💻 Qualquer hardware</p>
-              <p>🧠 Curiosidade infinita</p>
-              <p>🔧 Espírito gambiarra</p>
+            <h3 className="font-display text-sm text-amber mb-4">CONTATO</h3>
+            <div className="space-y-2 font-mono text-xs text-muted-foreground">
+              <p>
+                <span className="text-terminal">&gt;</span> calegario@cin.ufpe.br
+              </p>
+              <p className="text-muted-foreground/60 pl-3">
+                Discord em preparacao
+              </p>
             </div>
           </div>
 
+          {/* Development */}
           <div>
-            <h3 className="text-lg font-bold text-foreground mb-4 flex items-center">
-              <span className="text-hack mr-2">🎯</span>
-              Terceiro Encontro
+            <h3 className="font-display text-sm text-amber mb-4">
+              DESENVOLVIMENTO
             </h3>
-            <div className="space-y-2 text-muted-foreground text-sm">
-              <p>📅 14 de março de 2026</p>
-              <p>🕘 9h às 12h</p>
-              <p>📍 Sala Pontes, Porto Digital</p>
-              <p>Cais do Apolo, 222, Recife</p>
+            <div className="space-y-2 font-mono text-xs">
+              <a
+                href="https://github.com/filipecalegario/gambiarra-plataforma"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-muted-foreground hover:text-cyan transition-colors"
+              >
+                <span className="text-terminal">&gt;</span>{" "}
+                gambiarra-plataforma
+              </a>
+              <a
+                href="https://github.com/filipecalegario/gambiarra-llm-club-website"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-muted-foreground hover:text-cyan transition-colors"
+              >
+                <span className="text-terminal">&gt;</span>{" "}
+                gambiarra-llm-club-website
+              </a>
+              <p className="text-muted-foreground/60 pl-3">
+                Contribua via Pull Request!
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Bottom */}
-        <div className="border-t border-border pt-8 text-center">
-          <p className="text-muted-foreground text-sm mb-2">
-            Organização:{" "}
+      {/* Bottom bar */}
+      <div className="border-t border-border py-6 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="font-mono text-[10px] text-muted-foreground/60 leading-relaxed">
+            Organizacao:{" "}
             <a
               href="https://www.cin.ufpe.br"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-matrix hover:underline"
+              className="hover:text-amber transition-colors"
             >
-              Centro de Informática da UFPE
+              Centro de Informatica da UFPE
             </a>
-            ,{" "}
+            {" // "}
             <a
               href="https://www.portodigital.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-matrix hover:underline"
+              className="hover:text-amber transition-colors"
             >
               Porto Digital
             </a>
-            ,{" "}
+            {" // "}
             <a
               href="https://www.cesar.school/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-matrix hover:underline"
+              className="hover:text-amber transition-colors"
             >
               CESAR.school
-            </a>{" "}
-            e{" "}
+            </a>
+            {" // "}
             <a
               href="https://www.tds.company/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-matrix hover:underline"
+              className="hover:text-amber transition-colors"
             >
               tds.company
             </a>
