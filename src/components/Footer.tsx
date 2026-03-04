@@ -1,84 +1,61 @@
-import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { useState } from "react";
-
-interface FooterProps {
-  onJoinClick: () => void;
-}
-
-export const Footer = ({ onJoinClick }: FooterProps) => {
-  const [isSponsorOpen, setSponsorOpen] = useState(false);
-
+export const Footer = () => {
   return (
     <footer className="bg-background border-t border-border">
-      {/* CTA strip */}
+      {/* Contribute / Development section */}
       <div className="py-16 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-display text-3xl md:text-4xl text-amber mb-4 glitch-hover inline-block">
-            PRONTO PARA A GAMBIARRA?
-          </h2>
-          <p className="font-body text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-            Junte-se a revolucao dos LLMs caseiras. Traga suas ideias malucas e
-            vamos fazer historia!
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button
-              onClick={() =>
-                window.open(
-                  "https://www.sympla.com.br/evento/3-encontro-do-gambiarra-llm-club/3331154",
-                  "_blank"
-                )
-              }
-              size="lg"
-              className="bg-amber hover:bg-amber/90 text-background font-display tracking-wide px-8 py-6 rounded-sm"
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="font-display text-2xl md:text-3xl text-amber mb-3 glitch-hover inline-block">
+              CONTRIBUA
+            </h2>
+            <p className="font-body text-base text-muted-foreground max-w-lg mx-auto">
+              O Gambiarra LLM Club e open source. Ajude a construir a plataforma
+              e o site da comunidade.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-5">
+            <a
+              href="https://github.com/filipecalegario/gambiarra-plataforma"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block p-5 rounded-sm border border-border hover:border-cyan/40 bg-card/40 hover:bg-card/70 transition-all duration-300"
             >
-              INSCRICOES 3o ENCONTRO
-            </Button>
-            <Dialog open={isSponsorOpen} onOpenChange={setSponsorOpen}>
-              <DialogTrigger asChild>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-amber/30 text-amber hover:bg-amber/10 font-mono text-xs tracking-wider px-6 py-6 rounded-sm"
-                >
-                  PATROCINAR O CLUBE
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="sm:max-w-md bg-card border-amber/20">
-                <DialogHeader>
-                  <DialogTitle className="text-center text-xl font-display text-amber">
-                    Patrocinio do 3o Encontro
-                  </DialogTitle>
-                  <DialogDescription className="text-center text-muted-foreground mt-4">
-                    Para patrocinar o terceiro encontro do Gambiarra LLM Club,
-                    envie um e-mail para:
-                  </DialogDescription>
-                </DialogHeader>
-                <div className="flex flex-col items-center space-y-4 py-4">
-                  <div className="bg-background border border-amber/20 rounded-sm p-4 w-full">
-                    <p className="text-center font-mono text-amber font-bold text-lg">
-                      calegario@cin.ufpe.br
-                    </p>
-                  </div>
-                  <Button
-                    onClick={() => {
-                      navigator.clipboard.writeText("calegario@cin.ufpe.br");
-                      setSponsorOpen(false);
-                    }}
-                    className="bg-amber hover:bg-amber/90 text-background font-mono font-bold text-sm"
-                  >
-                    Copiar E-mail
-                  </Button>
-                </div>
-              </DialogContent>
-            </Dialog>
+              <div className="flex items-start justify-between mb-3">
+                <span className="font-mono text-lg text-terminal group-hover:text-cyan transition-colors">
+                  ~/plataforma
+                </span>
+                <span className="font-mono text-xs text-muted-foreground/40 group-hover:text-cyan transition-colors">
+                  &#8599;
+                </span>
+              </div>
+              <p className="font-display text-sm text-foreground mb-1">
+                gambiarra-plataforma
+              </p>
+              <p className="font-body text-xs text-muted-foreground">
+                Plataforma para gerenciar competicoes e rankings do clube
+              </p>
+            </a>
+            <a
+              href="https://github.com/filipecalegario/gambiarra-llm-club-website"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block p-5 rounded-sm border border-border hover:border-cyan/40 bg-card/40 hover:bg-card/70 transition-all duration-300"
+            >
+              <div className="flex items-start justify-between mb-3">
+                <span className="font-mono text-lg text-terminal group-hover:text-cyan transition-colors">
+                  ~/website
+                </span>
+                <span className="font-mono text-xs text-muted-foreground/40 group-hover:text-cyan transition-colors">
+                  &#8599;
+                </span>
+              </div>
+              <p className="font-display text-sm text-foreground mb-1">
+                gambiarra-llm-club-website
+              </p>
+              <p className="font-body text-xs text-muted-foreground">
+                O codigo deste site! Contribua via Pull Request
+              </p>
+            </a>
           </div>
         </div>
       </div>
@@ -88,7 +65,7 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
 
       {/* Info grid */}
       <div className="py-12 px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
           {/* Next meeting */}
           <div>
             <h3 className="font-display text-sm text-amber mb-4">
@@ -120,36 +97,6 @@ export const Footer = ({ onJoinClick }: FooterProps) => {
               </p>
               <p className="text-muted-foreground/60 pl-3">
                 Discord em preparacao
-              </p>
-            </div>
-          </div>
-
-          {/* Development */}
-          <div>
-            <h3 className="font-display text-sm text-amber mb-4">
-              DESENVOLVIMENTO
-            </h3>
-            <div className="space-y-2 font-mono text-xs">
-              <a
-                href="https://github.com/filipecalegario/gambiarra-plataforma"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-muted-foreground hover:text-cyan transition-colors"
-              >
-                <span className="text-terminal">&gt;</span>{" "}
-                gambiarra-plataforma
-              </a>
-              <a
-                href="https://github.com/filipecalegario/gambiarra-llm-club-website"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-muted-foreground hover:text-cyan transition-colors"
-              >
-                <span className="text-terminal">&gt;</span>{" "}
-                gambiarra-llm-club-website
-              </a>
-              <p className="text-muted-foreground/60 pl-3">
-                Contribua via Pull Request!
               </p>
             </div>
           </div>

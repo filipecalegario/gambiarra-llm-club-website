@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/AboutSection";
 import { ManifestoSection } from "@/components/ManifestoSection";
 import { CompetitionsSection } from "@/components/CompetitionsSection";
 import { MeetingsSection } from "@/components/MeetingsSection";
+import { SponsorSection } from "@/components/SponsorSection";
 import { Footer } from "@/components/Footer";
 import { CopyContentButton } from "@/components/CopyContentButton";
 
@@ -24,7 +25,8 @@ const Index = () => {
       <ManifestoSection />
       <CompetitionsSection />
       <MeetingsSection />
-      <Footer onJoinClick={handleJoinClick} />
+      <SponsorSection />
+      <Footer />
     </div>
   );
 };

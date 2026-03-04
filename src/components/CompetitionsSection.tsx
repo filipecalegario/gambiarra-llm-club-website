@@ -74,12 +74,12 @@ const difficultyStyles: Record<string, string> = {
 };
 
 const trophies = [
-  { name: "GPU de Ouro", desc: "Setup mais impressionante" },
-  { name: "Gambiarra Suprema", desc: "Solucao mais criativa" },
-  { name: "Prompt de Platina", desc: "Melhor engenharia de prompt" },
-  { name: "Eficiencia Maxima", desc: "Melhor performance/recurso" },
-  { name: "Ator do Ano", desc: "Melhor personagem interpretado" },
-  { name: "QI Artificial", desc: "Respostas mais inteligentes" },
+  { name: "GPU de Ouro", desc: "Setup mais impressionante", ascii: "[ GPU ]", color: "text-amber" },
+  { name: "Gambiarra Suprema", desc: "Solucao mais criativa", ascii: "{~*~}", color: "text-vermillion" },
+  { name: "Prompt de Platina", desc: "Melhor engenharia de prompt", ascii: "> _ <", color: "text-cyan" },
+  { name: "Eficiencia Maxima", desc: "Melhor performance/recurso", ascii: "⚡/KB", color: "text-terminal" },
+  { name: "Ator do Ano", desc: "Melhor personagem interpretado", ascii: "[:)]", color: "text-amber" },
+  { name: "QI Artificial", desc: "Respostas mais inteligentes", ascii: "{AI}", color: "text-cyan" },
 ];
 
 export const CompetitionsSection = () => {
@@ -162,25 +162,31 @@ export const CompetitionsSection = () => {
           ))}
         </div>
 
-        {/* Trophies strip */}
-        <div className="reveal mt-16 border-t border-border pt-10">
-          <h3 className="font-display text-xl text-center text-foreground mb-8">
+        {/* Trophies */}
+        <div className="reveal mt-20 border-t border-border pt-12">
+          <h3 className="font-display text-2xl md:text-3xl text-center text-amber mb-4 glitch-hover inline-block w-full">
             TROFEUS SIMBOLICOS
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <p className="text-center font-body text-sm text-muted-foreground mb-10 max-w-lg mx-auto">
+            Nossas competicoes premiam criatividade, nao so poder bruto
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
             {trophies.map((t, i) => (
               <div
                 key={i}
-                className="text-center p-3 rounded-sm border border-border/50 hover:border-amber/30 transition-colors bg-card/30"
+                className={`${["tilt-1","tilt-2","tilt-3","tilt-4","tilt-5","tilt-6"][i]} group text-center p-5 rounded-sm border border-border/50 hover:border-amber/30 transition-all duration-500 bg-card/40 hover:bg-card/70`}
               >
-                <p className="font-mono text-xs text-amber font-bold mb-1">
+                <div className={`font-mono text-2xl md:text-3xl font-bold mb-3 ${t.color} group-hover:text-amber transition-colors`}>
+                  {t.ascii}
+                </div>
+                <p className="font-display text-xs md:text-sm text-foreground mb-1">
                   {t.name}
                 </p>
-                <p className="text-[10px] text-muted-foreground">{t.desc}</p>
+                <p className="font-body text-xs text-muted-foreground">{t.desc}</p>
               </div>
             ))}
           </div>
-          <p className="text-center mt-6 font-mono text-xs text-muted-foreground">
+          <p className="text-center mt-8 font-mono text-xs text-muted-foreground">
             Novos desafios sao criados a cada encontro pela comunidade!
           </p>
         </div>
