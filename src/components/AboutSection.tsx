@@ -9,7 +9,7 @@ const highlights = [
   },
   {
     ascii: "{!}",
-    title: "Competicoes Criativas",
+    title: "Competições Criativas",
     desc: "Desafios que testam mais que performance bruta.",
   },
   {
@@ -38,7 +38,7 @@ export const AboutSection = () => {
           {/* Text — 3 cols */}
           <div className="lg:col-span-3">
             <h2 className="reveal font-display text-3xl md:text-5xl text-amber mb-8 glitch-hover inline-block">
-              O QUE E O CLUBE?
+              O QUE É O CLUBE?
             </h2>
 
             <div className="reveal space-y-5 font-body text-foreground/75 text-base md:text-lg leading-relaxed">
@@ -47,7 +47,7 @@ export const AboutSection = () => {
                 <span className="text-amber font-semibold">
                   Gambiarra LLM Club
                 </span>{" "}
-                e inspirado no{" "}
+                é inspirado no{" "}
                 <a
                   href="https://en.wikipedia.org/wiki/Homebrew_Computer_Club"
                   target="_blank"
@@ -56,13 +56,13 @@ export const AboutSection = () => {
                 >
                   Homebrew Computer Club
                 </a>
-                , o lendario clube de hobbistas que construiam seus proprios
-                computadores na epoca dos mainframes.
+                , o lendário clube de hobbistas que construíam seus próprios
+                computadores na época dos mainframes.
               </p>
               <p>
                 Somos uma comunidade de entusiastas que rodam modelos de
-                linguagem localmente, ajustando configuracoes para alcancar o
-                melhor resultado possivel. Aqui, criatividade e engenhosidade
+                linguagem localmente, ajustando configurações para alcançar o
+                melhor resultado possível. Aqui, criatividade e engenhosidade
                 valem mais que rankings de benchmarks.
               </p>
             </div>
@@ -93,7 +93,7 @@ export const AboutSection = () => {
             <div className="tape-strip tape-strip-right">
               <img
                 src={techCollage}
-                alt="Gambiarra LLM Club em acao"
+                alt="Gambiarra LLM Club em ação"
                 className="w-full rounded-sm shadow-2xl shadow-black/40 border border-amber/10"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent rounded-sm" />

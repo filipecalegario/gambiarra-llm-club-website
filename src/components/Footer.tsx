@@ -9,7 +9,7 @@ export const Footer = () => {
               CONTRIBUA
             </h2>
             <p className="font-body text-base text-muted-foreground max-w-lg mx-auto">
-              O Gambiarra LLM Club e open source. Ajude a construir a plataforma
+              O Gambiarra LLM Club é open source. Ajude a construir a plataforma
               e o site da comunidade.
             </p>
           </div>
@@ -32,7 +32,7 @@ export const Footer = () => {
                 gambiarra-plataforma
               </p>
               <p className="font-body text-xs text-muted-foreground">
-                Plataforma para gerenciar competicoes e rankings do clube
+                Plataforma para gerenciar competições e rankings do clube
               </p>
             </a>
             <a
@@ -53,7 +53,7 @@ export const Footer = () => {
                 gambiarra-llm-club-website
               </p>
               <p className="font-body text-xs text-muted-foreground">
-                O codigo deste site! Contribua via Pull Request
+                O código deste site! Contribua via Pull Request
               </p>
             </a>
           </div>
@@ -69,14 +69,14 @@ export const Footer = () => {
           {/* Next meeting */}
           <div>
             <h3 className="font-display text-sm text-amber mb-4">
-              PROXIMO ENCONTRO
+              PRÓXIMO ENCONTRO
             </h3>
             <div className="space-y-2 font-mono text-xs text-muted-foreground">
               <p>
-                <span className="text-terminal">&gt;</span> 14 de Marco de 2026
+                <span className="text-terminal">&gt;</span> 14 de Março de 2026
               </p>
               <p>
-                <span className="text-terminal">&gt;</span> 9h as 12h
+                <span className="text-terminal">&gt;</span> 9h às 12h
               </p>
               <p>
                 <span className="text-terminal">&gt;</span> Sala Pontes, Porto
@@ -96,7 +96,7 @@ export const Footer = () => {
                 <span className="text-terminal">&gt;</span> calegario@cin.ufpe.br
               </p>
               <p className="text-muted-foreground/60 pl-3">
-                Discord em preparacao
+                Discord em preparação
               </p>
             </div>
           </div>
@@ -107,14 +107,14 @@ export const Footer = () => {
       <div className="border-t border-border py-6 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <p className="font-mono text-[10px] text-muted-foreground/60 leading-relaxed">
-            Organizacao:{" "}
+            Organização:{" "}
             <a
               href="https://www.cin.ufpe.br"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-amber transition-colors"
             >
-              Centro de Informatica da UFPE
+              Centro de Informática da UFPE
             </a>
             {" // "}
             <a

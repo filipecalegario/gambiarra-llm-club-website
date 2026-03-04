@@ -15,7 +15,7 @@ const rewards = [
   },
   {
     emoji: "💬",
-    title: "Prompt de Platina", 
+    title: "Prompt de Platina",
     description: "Melhor engenharia de prompt",
     color: "from-gray-300 to-gray-500"
   },

@@ -7,7 +7,7 @@ interface HeroSectionProps {
 }
 
 const marqueeText =
-  "A CRIATIVIDADE E NOSSO BENCHMARK /// GAMBIARRA E UMA ARTE /// CADA PROMPT E UM EXPERIMENTO /// FAZEMOS MILAGRE COM POUCA VRAM /// RODAR LOCAL, PENSAR DIFERENTE /// ";
+  "A CRIATIVIDADE É NOSSO BENCHMARK /// GAMBIARRA É UMA ARTE /// CADA PROMPT É UM EXPERIMENTO /// FAZEMOS MILAGRE COM POUCA VRAM /// RODAR LOCAL, PENSAR DIFERENTE /// ";
 
 export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
   return (
@@ -49,14 +49,14 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
           size="lg"
           className="pulse-glow bg-amber hover:bg-amber/90 text-background font-display text-base md:text-lg px-8 md:px-12 py-6 md:py-7 rounded-sm tracking-wide transition-all duration-300 hover:scale-105"
         >
-          INSCRICOES 3o ENCONTRO
+          INSCRIÇÕES 3º ENCONTRO
         </Button>
 
         {/* Date & Location */}
         <div className="mt-8 space-y-1">
           <p className="font-mono text-xs md:text-sm text-muted-foreground">
-            <span className="text-terminal">&gt;</span> Sabado, 14 de marco de
-            2026, 9h as 12h
+            <span className="text-terminal">&gt;</span> Sábado, 14 de março de
+            2026, 9h às 12h
           </p>
           <p className="font-mono text-xs md:text-sm text-muted-foreground">
             <span className="text-terminal">&gt;</span> Sala Pontes, Porto

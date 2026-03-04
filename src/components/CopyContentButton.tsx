@@ -11,21 +11,21 @@ export const CopyContentButton = () => {
     try {
       const response = await fetch('/llms.txt');
       if (!response.ok) {
-        throw new Error('Nao foi possivel carregar o conteudo');
+        throw new Error('Não foi possível carregar o conteúdo');
       }
       const pageContent = await response.text();
 
       await navigator.clipboard.writeText(pageContent);
       setCopied(true);
       toast({
-        title: "Conteudo copiado!",
-        description: "Todo o conteudo da pagina foi copiado para a area de transferencia.",
+        title: "Conteúdo copiado!",
+        description: "Todo o conteúdo da página foi copiado para a área de transferência.",
       });
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       toast({
         title: "Erro ao copiar",
-        description: "Nao foi possivel copiar o conteudo.",
+        description: "Não foi possível copiar o conteúdo.",
         variant: "destructive",
       });
     }
@@ -36,7 +36,7 @@ export const CopyContentButton = () => {
       onClick={handleCopy}
       size="icon"
       className="fixed top-20 right-4 z-40 bg-card hover:bg-amber/20 text-amber border border-amber/20 shadow-lg transition-all duration-300 rounded-sm"
-      title="Copiar todo o conteudo da pagina"
+      title="Copiar todo o conteúdo da página"
     >
       {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
     </Button>

@@ -36,8 +36,8 @@ export const SponsorSection = () => {
               APOIE O CLUBE
             </h2>
             <p className="font-body text-base md:text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-              O Gambiarra LLM Club e mantido pela comunidade. Seu patrocinio
-              ajuda a viabilizar encontros, premios e infraestrutura para que
+              O Gambiarra LLM Club é mantido pela comunidade. Seu patrocínio
+              ajuda a viabilizar encontros, prêmios e infraestrutura para que
               mais pessoas experimentem com LLMs locais.
             </p>
 
@@ -78,7 +78,7 @@ export const SponsorSection = () => {
               <DialogContent className="sm:max-w-md bg-card border-amber/20">
                 <DialogHeader>
                   <DialogTitle className="text-center text-xl font-display text-amber">
-                    Patrocinio do 3o Encontro
+                    Patrocínio do 3º Encontro
                   </DialogTitle>
                   <DialogDescription className="text-center text-muted-foreground mt-4">
                     Para patrocinar o terceiro encontro do Gambiarra LLM Club,

@@ -2,36 +2,36 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const meetings = [
   {
-    number: "3o",
-    title: "3o Encontro",
-    date: "14 de Marco de 2026",
+    number: "3º",
+    title: "3º Encontro",
+    date: "14 de Março de 2026",
     status: "upcoming" as const,
     highlights: [
-      "Inscricoes abertas no Sympla",
-      "Novas competicoes ineditas",
+      "Inscrições abertas no Sympla",
+      "Novas competições inéditas",
       "Sala Pontes, Porto Digital, Recife",
     ],
   },
   {
-    number: "2o",
-    title: "2o Encontro",
+    number: "2º",
+    title: "2º Encontro",
     date: "Dezembro de 2025",
     status: "past" as const,
     highlights: [
       "Comunidade cresceu com mais entusiastas de IA",
-      "Novas gambiarras e demonstracoes praticas",
+      "Novas gambiarras e demonstrações práticas",
       "Mais desafios criativos testaram os limites dos LLMs caseiros",
     ],
   },
   {
-    number: "1o",
-    title: "1o Encontro",
+    number: "1º",
+    title: "1º Encontro",
     date: "Novembro de 2025",
     status: "past" as const,
     highlights: [
       "Dezenas de entusiastas se reuniram pela primeira vez",
-      "Demonstracoes praticas de LLMs em diferentes dispositivos",
-      "Competicoes e desafios tecnicos divertidos",
+      "Demonstrações práticas de LLMs em diferentes dispositivos",
+      "Competições e desafios técnicos divertidos",
     ],
   },
 ];

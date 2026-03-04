@@ -30,21 +30,21 @@ export const ManifestoSection = () => {
             </h3>
 
             <p>
-              Nos, curiosos, malucos e entusiastas das inteligencias artificiais caseiras,
+              Nós, curiosos, malucos e entusiastas das inteligências artificiais caseiras,
               declaramos:{" "}
               <span className="text-amber font-semibold">
-                a revolucao dos LLMs comeca na gambiarra.
+                a revolução dos LLMs começa na gambiarra.
               </span>
             </p>
 
             <p>
-              Nao temos datacenter. Temos um notebook com cooler que parece que vai
-              voar, um PC cheio de esperanca e uma vontade incontrolavel de experimentar.
+              Não temos datacenter. Temos um notebook com cooler que parece que vai
+              voar, um PC cheio de esperança e uma vontade incontrolável de experimentar.
             </p>
 
             {/* Pull quote */}
             <div className="reveal pull-quote my-10">
-              Nao buscamos vencer benchmarks, nem queremos bater nenhuma big tech
+              Não buscamos vencer benchmarks, nem queremos bater nenhuma big tech
               com seus super modelos. Queremos construir, brincar e subverter os limites
               com criatividade e engenhosidade.
             </div>
@@ -59,30 +59,30 @@ export const ManifestoSection = () => {
               >
                 Homebrew Computer Club
               </a>
-              , montamos nossos proprios setups, ajustamos parametros na unha e fazemos
-              milagre com pouca VRAM. Aqui, cada prompt e um experimento e cada erro,
+              , montamos nossos próprios setups, ajustamos parâmetros na unha e fazemos
+              milagre com pouca VRAM. Aqui, cada prompt é um experimento e cada erro,
               uma descoberta.
             </p>
 
             <p>
-              O <span className="text-amber font-semibold">Gambiarra LLM Club</span> e
-              um espaco de encontro para quem prefere rodar local, pensar diferente e
+              O <span className="text-amber font-semibold">Gambiarra LLM Club</span> é
+              um espaço de encontro para quem prefere rodar local, pensar diferente e
               aprender junto.
             </p>
 
             <p>
-              Trazemos nossos modelos open source, conectamos maquinas, trocamos scripts,
+              Trazemos nossos modelos open source, conectamos máquinas, trocamos scripts,
               fazemos testes esquisitos e damos risada das respostas malucas. Os jogos,
-              experimentos e competicoes sao uma bela desculpa pra gente se reunir e
+              experimentos e competições são uma bela desculpa pra gente se reunir e
               aprender juntos.
             </p>
 
             {/* Pull quote */}
             <div className="reveal pull-quote my-10">
-              Nossas competicoes nao premiam so quem tem a maquina mais potente,
+              Nossas competições não premiam só quem tem a máquina mais potente,
               mas quem faz mais com menos, quem inventa o uso mais inusitado, quem
-              encarna o personagem mais convincente ou escreve a historia mais
-              imprevisivel.
+              encarna o personagem mais convincente ou escreve a história mais
+              imprevisível.
             </div>
 
             <p className="text-foreground/70">
@@ -90,25 +90,25 @@ export const ManifestoSection = () => {
             </p>
 
             <p className="font-display text-2xl md:text-3xl text-vermillion text-center my-10">
-              Aqui, a gambiarra e uma arte.
+              Aqui, a gambiarra é uma arte.
             </p>
 
             <p>
-              Se voce ja tentou rodar um LLM em hardware que mal abre o navegador, se
-              ja afinou prompts como quem afina um instrumento desafinado, ou se apenas
-              tem curiosidade de ver ate onde da para ir com boas ideias e ferramentas
-              livres, o clube e seu.
+              Se você já tentou rodar um LLM em hardware que mal abre o navegador, se
+              já afinou prompts como quem afina um instrumento desafinado, ou se apenas
+              tem curiosidade de ver até onde dá para ir com boas ideias e ferramentas
+              livres, o clube é seu.
             </p>
 
             <div className="reveal text-center space-y-2 mt-10 pt-8 border-t border-amber/20">
               <p className="font-display text-lg md:text-xl text-foreground">
-                Traga seu hardware. Traga seu modelo. Traga seu espirito maker.
+                Traga seu hardware. Traga seu modelo. Traga seu espírito maker.
               </p>
               <p className="font-display text-xl md:text-2xl text-amber mt-4">
                 Junte-se ao Gambiarra LLM Club.
               </p>
               <p className="font-display text-lg text-vermillion">
-                A criatividade e nosso benchmark.
+                A criatividade é nosso benchmark.
               </p>
             </div>
 
@@ -127,7 +127,7 @@ export const ManifestoSection = () => {
             rel="noopener noreferrer"
             className="font-mono text-xs text-muted-foreground hover:text-amber transition-colors underline underline-offset-4"
           >
-            versao para impressao (PDF)
+            versão para impressão (PDF)
           </a>
         </div>
       </div>

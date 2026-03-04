@@ -4,53 +4,53 @@ const competitions = [
   {
     title: "Bot-a-Bot",
     description:
-      "Dois LLMs conversam tentando manter coerencia o maior tempo possivel",
-    difficulty: "Medio",
+      "Dois LLMs conversam tentando manter coerência o maior tempo possível",
+    difficulty: "Médio",
     ascii: "[ A <-> B ]",
     details: [
-      "Tema livre ou especifico",
-      "Avaliacao de criatividade",
-      "Consistencia de identidade",
+      "Tema livre ou específico",
+      "Avaliação de criatividade",
+      "Consistência de identidade",
     ],
   },
   {
-    title: "Traducao Infinita",
+    title: "Tradução Infinita",
     description: "Texto passa por cadeia de LLMs traduzindo entre idiomas",
-    difficulty: "Facil",
+    difficulty: "Fácil",
     ascii: "PT > EN > JP > ?",
     details: [
-      "Distorcao minima",
-      "Multiplos idiomas",
-      "Comparacao semantica",
+      "Distorção mínima",
+      "Múltiplos idiomas",
+      "Comparação semântica",
     ],
   },
   {
     title: "Conhecimento com Pegadinhas",
     description: "Perguntas gerais com armadilhas e ambiguidades",
-    difficulty: "Dificil",
+    difficulty: "Difícil",
     ascii: "Q: ??? A: !!!",
     details: [
       "Acerto direto: 1pt",
       "Resposta criativa: 0.5pt",
-      "Sistema de pontuacao",
+      "Sistema de pontuação",
     ],
   },
   {
-    title: "Continuacao de Historia",
-    description: "Continue narrativas com criatividade e coerencia",
-    difficulty: "Medio",
+    title: "Continuação de História",
+    description: "Continue narrativas com criatividade e coerência",
+    difficulty: "Médio",
     ascii: "Era uma vez...",
-    details: ["Criterios narrativos", "Votacao comunitaria", "Estilo e humor"],
+    details: ["Critérios narrativos", "Votação comunitária", "Estilo e humor"],
   },
   {
     title: "Personagem Oculto",
     description: "LLM encarna personagem e outros devem adivinhar",
-    difficulty: "Dificil",
+    difficulty: "Difícil",
     ascii: "WHO AM I ?",
     details: [
-      "Manter consistencia",
-      "Improvisacao",
-      "Atuacao convincente",
+      "Manter consistência",
+      "Improvisação",
+      "Atuação convincente",
     ],
   },
   {
@@ -60,24 +60,24 @@ const competitions = [
     ascii: "MIN HW > MAX AI",
     details: [
       "Hardware criativo",
-      "Quantizacao extrema",
+      "Quantização extrema",
       "Performance vs recursos",
     ],
   },
 ];
 
 const difficultyStyles: Record<string, string> = {
-  Facil: "bg-terminal/15 text-terminal border-terminal/30",
-  Medio: "bg-amber/15 text-amber border-amber/30",
-  Dificil: "bg-vermillion/15 text-vermillion border-vermillion/30",
+  Fácil: "bg-terminal/15 text-terminal border-terminal/30",
+  Médio: "bg-amber/15 text-amber border-amber/30",
+  Difícil: "bg-vermillion/15 text-vermillion border-vermillion/30",
   Extremo: "bg-vermillion/25 text-vermillion border-vermillion/50",
 };
 
 const trophies = [
   { name: "GPU de Ouro", desc: "Setup mais impressionante", ascii: "[ GPU ]", color: "text-amber" },
-  { name: "Gambiarra Suprema", desc: "Solucao mais criativa", ascii: "{~*~}", color: "text-vermillion" },
+  { name: "Gambiarra Suprema", desc: "Solução mais criativa", ascii: "{~*~}", color: "text-vermillion" },
   { name: "Prompt de Platina", desc: "Melhor engenharia de prompt", ascii: "> _ <", color: "text-cyan" },
-  { name: "Eficiencia Maxima", desc: "Melhor performance/recurso", ascii: "⚡/KB", color: "text-terminal" },
+  { name: "Eficiência Máxima", desc: "Melhor performance/recurso", ascii: "⚡/KB", color: "text-terminal" },
   { name: "Ator do Ano", desc: "Melhor personagem interpretado", ascii: "[:)]", color: "text-amber" },
   { name: "QI Artificial", desc: "Respostas mais inteligentes", ascii: "{AI}", color: "text-cyan" },
 ];
@@ -103,7 +103,7 @@ export const CompetitionsSection = () => {
         {/* Header */}
         <div className="reveal text-center mb-16">
           <h2 className="font-display text-3xl md:text-5xl lg:text-6xl text-amber mb-4 glitch-hover inline-block">
-            COMPETICOES
+            COMPETIÇÕES
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
             Desafios que testam criatividade, performance e gambiarras dos seus
@@ -165,10 +165,10 @@ export const CompetitionsSection = () => {
         {/* Trophies */}
         <div className="reveal mt-20 border-t border-border pt-12">
           <h3 className="font-display text-2xl md:text-3xl text-center text-amber mb-4 glitch-hover inline-block w-full">
-            TROFEUS SIMBOLICOS
+            TROFÉUS SIMBÓLICOS
           </h3>
           <p className="text-center font-body text-sm text-muted-foreground mb-10 max-w-lg mx-auto">
-            Nossas competicoes premiam criatividade, nao so poder bruto
+            Nossas competições premiam criatividade, não só poder bruto
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
             {trophies.map((t, i) => (
@@ -187,7 +187,7 @@ export const CompetitionsSection = () => {
             ))}
           </div>
           <p className="text-center mt-8 font-mono text-xs text-muted-foreground">
-            Novos desafios sao criados a cada encontro pela comunidade!
+            Novos desafios são criados a cada encontro pela comunidade!
           </p>
         </div>
       </div>
