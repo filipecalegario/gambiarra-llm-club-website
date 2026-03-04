@@ -1,13 +1,4 @@
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { useState } from "react";
 import heroImage from "@/assets/hero-gambiarra.jpg";
 import gambiarraLogo from "@/assets/gambiarra-logo.png";
 
@@ -19,8 +10,6 @@ const marqueeText =
   "A CRIATIVIDADE E NOSSO BENCHMARK /// GAMBIARRA E UMA ARTE /// CADA PROMPT E UM EXPERIMENTO /// FAZEMOS MILAGRE COM POUCA VRAM /// RODAR LOCAL, PENSAR DIFERENTE /// ";
 
 export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
-  const [isSponsorOpen, setSponsorOpen] = useState(false);
-
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Background Image with warm overlay */}
@@ -99,40 +88,16 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
             encontros anteriores
           </button>
           <span className="text-muted-foreground/30 text-xs">//</span>
-          <Dialog open={isSponsorOpen} onOpenChange={setSponsorOpen}>
-            <DialogTrigger asChild>
-              <button className="font-mono text-xs text-muted-foreground hover:text-amber transition-colors underline underline-offset-4 decoration-amber/30 hover:decoration-amber">
-                patrocinar
-              </button>
-            </DialogTrigger>
-            <DialogContent className="sm:max-w-md bg-card border-amber/20">
-              <DialogHeader>
-                <DialogTitle className="text-center text-xl font-display text-amber">
-                  Patrocinio do 3o Encontro
-                </DialogTitle>
-                <DialogDescription className="text-center text-muted-foreground mt-4">
-                  Para patrocinar o terceiro encontro do Gambiarra LLM Club,
-                  envie um e-mail para:
-                </DialogDescription>
-              </DialogHeader>
-              <div className="flex flex-col items-center space-y-4 py-4">
-                <div className="bg-background border border-amber/20 rounded-sm p-4 w-full">
-                  <p className="text-center font-mono text-amber font-bold text-lg">
-                    calegario@cin.ufpe.br
-                  </p>
-                </div>
-                <Button
-                  onClick={() => {
-                    navigator.clipboard.writeText("calegario@cin.ufpe.br");
-                    setSponsorOpen(false);
-                  }}
-                  className="bg-amber hover:bg-amber/90 text-background font-mono font-bold text-sm"
-                >
-                  Copiar E-mail
-                </Button>
-              </div>
-            </DialogContent>
-          </Dialog>
+          <button
+            onClick={() =>
+              document
+                .querySelector("#patrocinio")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="font-mono text-xs text-muted-foreground hover:text-amber transition-colors underline underline-offset-4 decoration-amber/30 hover:decoration-amber"
+          >
+            patrocinar
+          </button>
         </div>
       </div>
 

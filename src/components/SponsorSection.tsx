@@ -16,6 +16,7 @@ export const SponsorSection = () => {
 
   return (
     <section
+      id="patrocinio"
       ref={sectionRef}
       className="py-20 px-6 bg-background relative overflow-hidden"
     >
