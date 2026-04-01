@@ -55,7 +55,7 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
         {/* Date & Location */}
         <div className="mt-8 space-y-1">
           <p className="font-mono text-xs md:text-sm text-muted-foreground">
-            <span className="text-terminal">&gt;</span> Sábado, 14 de março de
+            <span className="text-terminal">&gt;</span> Sábado, 11 de abril de
             2026, 9h às 12h
           </p>
           <p className="font-mono text-xs md:text-sm text-muted-foreground">
