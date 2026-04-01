@@ -42,14 +42,14 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
         <Button
           onClick={() =>
             window.open(
-              "https://www.sympla.com.br/evento/3-encontro-do-gambiarra-llm-club/3331154",
+              "https://www.sympla.com.br/evento/4-encontro-do-gambiarra-llm-club/3371195",
               "_blank"
             )
           }
           size="lg"
           className="pulse-glow bg-amber hover:bg-amber/90 text-background font-display text-base md:text-lg px-8 md:px-12 py-6 md:py-7 rounded-sm tracking-wide transition-all duration-300 hover:scale-105"
         >
-          INSCRIÇÕES 3º ENCONTRO
+          INSCRIÇÕES 4º ENCONTRO
         </Button>
 
         {/* Date & Location */}
