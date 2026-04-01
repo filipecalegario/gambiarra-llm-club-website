@@ -118,11 +118,11 @@ export const MeetingsSection = () => {
                     ))}
                   </ul>
 
-                  {meeting.status === "upcoming" && (
+                  {meeting.status === "upcoming" && "symplaUrl" in meeting && (
                     <button
                       onClick={() =>
                         window.open(
-                          "https://www.sympla.com.br/evento/3-encontro-do-gambiarra-llm-club/3331154",
+                          (meeting as any).symplaUrl,
                           "_blank"
                         )
                       }
