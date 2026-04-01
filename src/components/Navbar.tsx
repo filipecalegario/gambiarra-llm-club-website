@@ -111,14 +111,14 @@ export const Navbar = () => {
           <Button
             onClick={() => {
               window.open(
-                "https://www.sympla.com.br/evento/3-encontro-do-gambiarra-llm-club/3331154",
+                "https://www.sympla.com.br/evento/4-encontro-do-gambiarra-llm-club/3371195",
                 "_blank"
               );
               setMobileOpen(false);
             }}
             className="w-full bg-amber hover:bg-amber/90 text-background font-mono text-xs font-bold tracking-wider"
           >
-            3º ENCONTRO
+            4º ENCONTRO
           </Button>
         </div>
       </div>
