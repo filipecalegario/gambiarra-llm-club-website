@@ -73,7 +73,7 @@ export const Footer = () => {
             </h3>
             <div className="space-y-2 font-mono text-xs text-muted-foreground">
               <p>
-                <span className="text-terminal">&gt;</span> 11 de Abril de 2026
+                <span className="text-terminal">&gt;</span> 23 de Maio de 2026
               </p>
               <p>
                 <span className="text-terminal">&gt;</span> 9h às 12h

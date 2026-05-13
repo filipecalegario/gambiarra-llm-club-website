@@ -56,14 +56,14 @@ export const Navbar = () => {
             <Button
               onClick={() =>
                 window.open(
-                  "https://www.sympla.com.br/evento/4-encontro-do-gambiarra-llm-club/3371195",
+                  "https://www.sympla.com.br/evento/5-encontro-do-gambiarra-llm-club/3421644",
                   "_blank"
                 )
               }
               size="sm"
               className="bg-amber hover:bg-amber/90 text-background font-mono text-xs font-bold tracking-wider px-4"
             >
-              4º ENCONTRO
+              5º ENCONTRO
             </Button>
           </div>
 
@@ -111,14 +111,14 @@ export const Navbar = () => {
           <Button
             onClick={() => {
               window.open(
-                "https://www.sympla.com.br/evento/4-encontro-do-gambiarra-llm-club/3371195",
+                "https://www.sympla.com.br/evento/5-encontro-do-gambiarra-llm-club/3421644",
                 "_blank"
               );
               setMobileOpen(false);
             }}
             className="w-full bg-amber hover:bg-amber/90 text-background font-mono text-xs font-bold tracking-wider"
           >
-            4º ENCONTRO
+            5º ENCONTRO
           </Button>
         </div>
       </div>
