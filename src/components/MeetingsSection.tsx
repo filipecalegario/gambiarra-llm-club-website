@@ -2,16 +2,27 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const meetings = [
   {
-    number: "4º",
-    title: "4º Encontro",
-    date: "11 de Abril de 2026",
+    number: "5º",
+    title: "5º Encontro",
+    date: "23 de Maio de 2026",
     status: "upcoming" as const,
     highlights: [
       "Inscrições abertas no Sympla",
       "Novos desafios criativos com LLMs locais",
       "Sala Pontes, Porto Digital, Recife",
     ],
-    symplaUrl: "https://www.sympla.com.br/evento/4-encontro-do-gambiarra-llm-club/3371195",
+    symplaUrl: "https://www.sympla.com.br/evento/5-encontro-do-gambiarra-llm-club/3421644",
+  },
+  {
+    number: "4º",
+    title: "4º Encontro",
+    date: "11 de Abril de 2026",
+    status: "past" as const,
+    highlights: [
+      "Mais um encontro com muitas gambiarras e aprendizado",
+      "Competições criativas testando o limite dos LLMs",
+      "Comunidade crescendo a cada edição",
+    ],
   },
   {
     number: "3º",

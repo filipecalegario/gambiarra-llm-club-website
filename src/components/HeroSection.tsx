@@ -42,20 +42,20 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
         <Button
           onClick={() =>
             window.open(
-              "https://www.sympla.com.br/evento/4-encontro-do-gambiarra-llm-club/3371195",
+              "https://www.sympla.com.br/evento/5-encontro-do-gambiarra-llm-club/3421644",
               "_blank"
             )
           }
           size="lg"
           className="pulse-glow bg-amber hover:bg-amber/90 text-background font-display text-base md:text-lg px-8 md:px-12 py-6 md:py-7 rounded-sm tracking-wide transition-all duration-300 hover:scale-105"
         >
-          INSCRIÇÕES 4º ENCONTRO
+          INSCRIÇÕES 5º ENCONTRO
         </Button>
 
         {/* Date & Location */}
         <div className="mt-8 space-y-1">
           <p className="font-mono text-xs md:text-sm text-muted-foreground">
-            <span className="text-terminal">&gt;</span> Sábado, 11 de abril de
+            <span className="text-terminal">&gt;</span> Sábado, 23 de maio de
             2026, 9h às 12h
           </p>
           <p className="font-mono text-xs md:text-sm text-muted-foreground">
