@@ -1,6 +1,7 @@
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import encontro1 from "@/assets/encontro-1.jpg";
 import encontro2 from "@/assets/encontro-2.jpg";
+import encontro3 from "@/assets/encontro-3.jpg";
 
 const meetings = [
   {
@@ -29,8 +30,9 @@ const meetings = [
   {
     number: "3º",
     title: "3º Encontro",
-    date: "Março de 2026",
+    date: "14 de Março de 2026",
     status: "past" as const,
+    photo: encontro3,
     highlights: [
       "Volta do clube em 2026 com muita energia",
       "Competições inéditas e desafios criativos",
