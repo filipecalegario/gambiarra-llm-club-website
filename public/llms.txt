@@ -5,154 +5,171 @@ O primeiro clube de LLMs caseiras do Brasil
 
 SOBRE O CLUBE
 
-O Gambiarra LLM Club é inspirado no Homebrew Computer Club, o lendário clube de hobbistas que construíam seus próprios computadores na época dos mainframes.
+O Gambiarra LLM Club e inspirado no Homebrew Computer Club, o lendario clube de hobbistas que construiam seus proprios computadores na epoca dos mainframes.
 
-Somos uma comunidade de entusiastas que rodam seus modelos de linguagem localmente, ajustando as configurações para alcançar o melhor resultado que der.
+Somos uma comunidade de entusiastas que rodam seus modelos de linguagem localmente, ajustando as configuracoes para alcancar o melhor resultado que der.
 
-Não temos a pretensão de bater os modelos das big techs. Aqui, a criatividade e a engenhosidade valem mais que os melhores rankings dos benchmarks.
+Nao temos a pretensao de bater os modelos das big techs. Aqui, a criatividade e a engenhosidade valem mais que os melhores rankings dos benchmarks.
 
-🔧 Rodando LLMs Locais
-Traga seu setup, por mais simples que seja. A gambiarra é bem-vinda!
+[>_] LLMs Locais
+Traga seu setup, por mais simples que seja. A gambiarra e bem-vinda!
 
-🏆 Competições Criativas
-Desafios únicos que testam mais que performance bruta.
+{!} Competicoes Criativas
+Desafios que testam mais que performance bruta.
 
-🤝 Comunidade
-Troca de conhecimento, ferramentas, prompts, LLMs open source.
+</> Open Source
+Modelos, scripts, ferramentas livres.
 
-📅 Encontros Regulares
-Mensais ou bimestrais, sempre de forma presencial.
+[ ] Comunidade
+Troca de conhecimento, encontros presenciais.
 
 ==============================================
 
 MANIFESTO DO GAMBIARRA LLM CLUB
 
-Nós, curiosos, malucos e entusiastas das inteligências artificiais caseiras, declaramos: a revolução dos LLMs começa na gambiarra.
+Nos, curiosos, malucos e entusiastas das inteligencias artificiais caseiras, declaramos: a revolucao dos LLMs comeca na gambiarra.
 
-Não temos datacenter. Temos um notebook com cooler que parece que vai voar, um PC cheio de esperança e uma vontade incontrolável de experimentar.
+Nao temos datacenter. Temos um notebook com cooler que parece que vai voar, um PC cheio de esperanca e uma vontade incontrolavel de experimentar.
 
-Não buscamos vencer benchmarks, nem queremos bater nenhuma big tech com seus super modelos. Queremos construir, brincar e subverter os limites com criatividade e engenhosidade.
+Nao buscamos vencer benchmarks, nem queremos bater nenhuma big tech com seus super modelos. Queremos construir, brincar e subverter os limites com criatividade e engenhosidade.
 
-Inspirados pelos pioneiros do Homebrew Computer Club, montamos nossos próprios setups, ajustamos parâmetros na unha e fazemos milagre com pouca VRAM. Aqui, cada prompt é um experimento e cada erro, uma descoberta.
+Inspirados pelos pioneiros do Homebrew Computer Club, montamos nossos proprios setups, ajustamos parametros na unha e fazemos milagre com pouca VRAM. Aqui, cada prompt e um experimento e cada erro, uma descoberta.
 
-O Gambiarra LLM Club é um espaço de encontro para quem prefere rodar local, pensar diferente e aprender junto.
+O Gambiarra LLM Club e um espaco de encontro para quem prefere rodar local, pensar diferente e aprender junto.
 
-Trazemos nossos modelos open source, conectamos máquinas, trocamos scripts, fazemos testes esquisitos e damos risada das respostas malucas.
+Trazemos nossos modelos open source, conectamos maquinas, trocamos scripts, fazemos testes esquisitos e damos risada das respostas malucas.
 
-Os jogos, experimentos e competições são uma bela desculpa pra gente se reunir e aprender juntos.
+Os jogos, experimentos e competicoes sao uma bela desculpa pra gente se reunir e aprender juntos.
 
-Nossas competições não premiam só quem tem a máquina mais potente, mas quem faz mais com menos, quem inventa o uso mais inusitado, quem encarna o personagem mais convincente ou escreve a história mais imprevisível. Valorizamos o improviso e a comunidade.
+Nossas competicoes nao premiam so quem tem a maquina mais potente, mas quem faz mais com menos, quem inventa o uso mais inusitado, quem encarna o personagem mais convincente ou escreve a historia mais imprevisivel. Valorizamos o improviso e a comunidade.
 
-Aqui, a gambiarra é uma arte.
+Aqui, a gambiarra e uma arte.
 
-Se você já tentou rodar um LLM em hardware que mal abre o navegador, se já afinou prompts como quem afina um instrumento desafinado, ou se apenas tem curiosidade de ver até onde dá para ir com boas ideias e ferramentas livres, o clube é seu.
+Se voce ja tentou rodar um LLM em hardware que mal abre o navegador, se ja afinou prompts como quem afina um instrumento desafinado, ou se apenas tem curiosidade de ver ate onde da para ir com boas ideias e ferramentas livres, o clube e seu.
 
-Traga seu hardware. Traga seu modelo. Traga seu espírito maker.
+Traga seu hardware. Traga seu modelo. Traga seu espirito maker.
 
-Junte-se ao Gambiarra LLM Club. A criatividade é nosso benchmark.
+Junte-se ao Gambiarra LLM Club. A criatividade e nosso benchmark.
 
 @fcac 29/07/2025
 
 ==============================================
 
-JOGOS, EXPERIMENTOS E COMPETIÇÕES
+JOGOS, EXPERIMENTOS E COMPETICOES
 
-🤖 Bot-a-Bot (Médio)
-Dois LLMs conversam tentando manter coerência o maior tempo possível
-- Tema livre ou específico
-- Avaliação de criatividade
-- Consistência de identidade
+[ A <-> B ] Bot-a-Bot (Medio)
+Dois LLMs conversam tentando manter coerencia o maior tempo possivel
+- Tema livre ou especifico
+- Avaliacao de criatividade
+- Consistencia de identidade
 
-🌍 Tradução Infinita (Fácil)
+PT > EN > JP > ?  Traduacao Infinita (Facil)
 Texto passa por cadeia de LLMs traduzindo entre idiomas
-- Distorção mínima
-- Múltiplos idiomas
-- Comparação semântica
+- Distorcao minima
+- Multiplos idiomas
+- Comparacao semantica
 
-🧠 Conhecimento com Pegadinhas (Difícil)
+Q: ??? A: !!! Conhecimento com Pegadinhas (Dificil)
 Perguntas gerais com armadilhas e ambiguidades
 - Acerto direto: 1pt
 - Resposta criativa: 0.5pt
-- Sistema de pontuação
+- Sistema de pontuacao
 
-📚 Continuação de História (Médio)
-Continue narrativas com criatividade e coerência
-- Critérios narrativos
-- Votação comunitária
+Era uma vez... Continuacao de Historia (Medio)
+Continue narrativas com criatividade e coerencia
+- Criterios narrativos
+- Votacao comunitaria
 - Estilo e humor
 
-🎭 Personagem Oculto (Difícil)
+WHO AM I ? Personagem Oculto (Dificil)
 LLM encarna personagem e outros devem adivinhar
-- Manter consistência
-- Improvisação
-- Atuação convincente
+- Manter consistencia
+- Improvisacao
+- Atuacao convincente
 
-⚡ Batalha de Gambiarras (Extremo)
+MIN HW > MAX AI Batalha de Gambiarras (Extremo)
 Melhor modelo no hardware mais limitado
 - Hardware criativo
-- Quantização extrema
+- Quantizacao extrema
 - Performance vs recursos
 
 ==============================================
 
-RECOMPENSAS & EXTRAS
+TROFEUS SIMBOLICOS
 
-🏆 Troféus Simbólicos:
+[ GPU ] GPU de Ouro
+Setup mais impressionante
 
-🥇 GPU de Ouro
-Para o setup mais impressionante
+{~*~} Gambiarra Suprema
+Solucao mais criativa e improvavel
 
-🔧 Gambiarra Suprema
-Solução mais criativa e improvável
-
-💬 Prompt de Platina
+> _ < Prompt de Platina
 Melhor engenharia de prompt
 
-⚡ Eficiência Máxima
+⚡/KB Eficiencia Maxima
 Melhor performance/recurso
 
-🎭 Ator do Ano
+[:)] Ator do Ano
 Melhor personagem interpretado
 
-🧠 QI Artificial
+{AI} QI Artificial
 Respostas mais inteligentes
 
-✨ Benefícios da Comunidade:
-- Show & Tell com setups e hacks
-- Repositório comunitário de referências e ferramentas
-- Discord exclusivo
-- Mentoria entre membros
+Novos desafios sao criados a cada encontro pela comunidade!
 
-Em Preparação:
-📱 App mobile para competições remotas
-📊 Dashboard de performance histórica
-🎮 Torneios online entre encontros
-🛒 Marketplace de prompts e configs
+==============================================
+
+ENCONTROS
+
+> 5 Encontro — 23 de Maio de 2026, 9h as 12h
+  Sala Pontes, Porto Digital, Cais do Apolo, 222, Recife
+  Inscricoes: https://www.sympla.com.br/evento/5-encontro-do-gambiarra-llm-club/3421644
+
+> 4 Encontro — 11 de Abril de 2026
+
+> 3 Encontro — 14 de Marco de 2026
+
+> 2 Encontro — 14 de Dezembro de 2025
+
+> 1 Encontro — 08 de Novembro de 2025
+
+==============================================
+
+PATROCINIO
+
+O Gambiarra LLM Club e mantido pela comunidade. Seu patrocinio ajuda a viabilizar encontros, premios e infraestrutura para que mais pessoas experimentem com LLMs locais.
+
+{$} Visibilidade — Logo no site e materiais dos encontros
+{*} Comunidade — Acesso direto a entusiastas de IA do Recife
+{!} Impacto — Ajude a democratizar IA open source no Brasil
+
+Para patrocinar, envie um e-mail para: calegario@cin.ufpe.br
 
 ==============================================
 
 CONTATO
 
-📧 Em breve: canal oficial
-💬 Discord em preparação
-
-REQUISITOS
-
-💻 Qualquer hardware
-🧠 Curiosidade infinita
-🔧 Espírito gambiarra
-
-PRÓXIMOS PASSOS
-
-📅 Primeiro encontro
-🏗️ Setup da infraestrutura
-🎮 Primeiras competições
+> calegario@cin.ufpe.br
+> Discord em preparacao
 
 ==============================================
 
-👾 Encontros mensais • 🔧 Experimentação com LLMs locais • 🏆 Competições épicas
+REQUISITOS
 
-▸ Em breve: primeiro encontro oficial no Recife.
+Qualquer hardware
+Curiosidade infinita
+Espirito gambiarra
+
+==============================================
+
+ORGANIZACAO
+
+Centro de Informatica da UFPE (cin.ufpe.br)
+Porto Digital (portodigital.org)
+CESAR.school (cesar.school)
+tds.company
+
+==============================================
 
 Gambiarra LLM Club • Onde a criatividade encontra a IA
-Feito com ♥ e muito café para a comunidade brasileira de IA
+Feito com ♥ e muito cafe para a comunidade brasileira de IA
