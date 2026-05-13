@@ -15,11 +15,7 @@ export const SponsorSection = () => {
   const sectionRef = useScrollReveal<HTMLElement>();
 
   return (
-    <section
-      id="patrocinio"
-      ref={sectionRef}
-      className="py-20 px-6 bg-background relative overflow-hidden"
-    >
+    <section id="patrocinio" ref={sectionRef} className="py-20 px-6 bg-background relative overflow-hidden">
       {/* Decorative border lines */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber/30 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber/30 to-transparent" />
@@ -36,9 +32,8 @@ export const SponsorSection = () => {
               APOIE O CLUBE
             </h2>
             <p className="font-body text-base md:text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-              O Gambiarra LLM Club é mantido pela comunidade. Seu patrocínio
-              ajuda a viabilizar encontros, prêmios e infraestrutura para que
-              mais pessoas experimentem com LLMs locais.
+              O Gambiarra LLM Club é mantido pela comunidade. Seu patrocínio ajuda a viabilizar encontros, prêmios e
+              infraestrutura para que mais pessoas experimentem com LLMs locais.
             </p>
 
             {/* Benefits preview */}
@@ -46,9 +41,7 @@ export const SponsorSection = () => {
               <div className="p-4 rounded-sm border border-border/50 bg-background/40">
                 <div className="font-mono text-lg text-amber mb-2">{`{$}`}</div>
                 <p className="font-display text-xs text-foreground mb-1">VISIBILIDADE</p>
-                <p className="font-body text-[11px] text-muted-foreground">
-                  Logo no site e materiais dos encontros
-                </p>
+                <p className="font-body text-[11px] text-muted-foreground">Logo no site e materiais dos encontros</p>
               </div>
               <div className="p-4 rounded-sm border border-border/50 bg-background/40">
                 <div className="font-mono text-lg text-terminal mb-2">{`<*>`}</div>
@@ -78,18 +71,15 @@ export const SponsorSection = () => {
               <DialogContent className="sm:max-w-md bg-card border-amber/20">
                 <DialogHeader>
                   <DialogTitle className="text-center text-xl font-display text-amber">
-                    Patrocínio do 3º Encontro
+                    Patrocínio dos Encontros
                   </DialogTitle>
                   <DialogDescription className="text-center text-muted-foreground mt-4">
-                    Para patrocinar o terceiro encontro do Gambiarra LLM Club,
-                    envie um e-mail para:
+                    Para patrocinar os próximos encontros do Gambiarra LLM Club, envie um e-mail para:
                   </DialogDescription>
                 </DialogHeader>
                 <div className="flex flex-col items-center space-y-4 py-4">
                   <div className="bg-background border border-amber/20 rounded-sm p-4 w-full">
-                    <p className="text-center font-mono text-amber font-bold text-lg">
-                      calegario@cin.ufpe.br
-                    </p>
+                    <p className="text-center font-mono text-amber font-bold text-lg">calegario@cin.ufpe.br</p>
                   </div>
                   <Button
                     onClick={() => {
