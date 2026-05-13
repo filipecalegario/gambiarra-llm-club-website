@@ -1,5 +1,6 @@
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import encontro1 from "@/assets/encontro-1.jpg";
+import encontro2 from "@/assets/encontro-2.jpg";
 
 const meetings = [
   {
@@ -39,8 +40,9 @@ const meetings = [
   {
     number: "2º",
     title: "2º Encontro",
-    date: "Dezembro de 2025",
+    date: "14 de Dezembro de 2025",
     status: "past" as const,
+    photo: encontro2,
     highlights: [
       "Comunidade cresceu com mais entusiastas de IA",
       "Novas gambiarras e demonstrações práticas",
