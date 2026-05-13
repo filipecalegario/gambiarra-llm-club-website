@@ -1,4 +1,5 @@
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import encontro1 from "@/assets/encontro-1.jpg";
 
 const meetings = [
   {
@@ -49,8 +50,9 @@ const meetings = [
   {
     number: "1º",
     title: "1º Encontro",
-    date: "Novembro de 2025",
+    date: "08 de Novembro de 2025",
     status: "past" as const,
+    photo: encontro1,
     highlights: [
       "Dezenas de entusiastas se reuniram pela primeira vez",
       "Demonstrações práticas de LLMs em diferentes dispositivos",
@@ -128,6 +130,17 @@ export const MeetingsSection = () => {
                       </li>
                     ))}
                   </ul>
+
+                  {"photo" in meeting && (meeting as any).photo && (
+                    <div className="mt-5 overflow-hidden rounded-sm border border-border/60">
+                      <img
+                        src={(meeting as any).photo}
+                        alt={`Foto oficial do ${meeting.title} do Gambiarra LLM Club`}
+                        loading="lazy"
+                        className="w-full h-auto object-cover transition-transform duration-500 hover:scale-[1.02]"
+                      />
+                    </div>
+                  )}
 
                   {meeting.status === "upcoming" && "symplaUrl" in meeting && (
                     <button
