@@ -16,7 +16,7 @@ const meetings = [
       "Novos desafios criativos com LLMs locais",
       "Sala Pontes, Porto Digital, Recife",
     ],
-    symplaUrl: "https://www.sympla.com.br/evento/5-encontro-do-gambiarra-llm-club/3421644",
+    symplaUrl: "https://www.sympla.com.br/evento/6-encontro-do-gambiarra-llm-club/3494699",
   },
   {
     number: "5º",
