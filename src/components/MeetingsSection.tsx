@@ -3,6 +3,7 @@ import encontro1 from "@/assets/encontro-1.jpg";
 import encontro2 from "@/assets/encontro-2.jpg";
 import encontro3 from "@/assets/encontro-3.jpg";
 import encontro4 from "@/assets/encontro-4.jpg";
+import encontro5 from "@/assets/encontro-5.jpg";
 
 const meetings = [
   {
@@ -22,10 +23,13 @@ const meetings = [
     title: "5º Encontro",
     date: "23 de Maio de 2026",
     status: "past" as const,
+    photo: encontro5,
+    reportUrl: "/relatorio-5-encontro.html",
     highlights: [
-      "Mais um encontro com muitas gambiarras e aprendizado",
-      "Competições criativas testando o limite dos LLMs",
-      "Comunidade crescendo a cada edição",
+      "58 participantes, 69 dispositivos e 24 modelos rodando localmente na mesma rede",
+      "Grande Final da capivara dançando frevo: 25 gerações e 288 votos",
+      "Estreia do modo World com 238 entradas de 54 criaturas",
+      "Rodada do Soneto: kai (gemma3:1b) respondeu em 2.8s",
     ],
   },
   {
