@@ -163,6 +163,17 @@ export const MeetingsSection = () => {
                     </div>
                   )}
 
+                  {"reportUrl" in meeting && (meeting as any).reportUrl && (
+                    <a
+                      href={(meeting as any).reportUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-block font-mono text-xs text-amber hover:underline underline-offset-4"
+                    >
+                      &gt; ver relatório completo do encontro
+                    </a>
+                  )}
+
                   {meeting.status === "upcoming" && "symplaUrl" in meeting && (
                     <button
                       onClick={() =>
