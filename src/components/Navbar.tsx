@@ -63,7 +63,7 @@ export const Navbar = () => {
               size="sm"
               className="bg-amber hover:bg-amber/90 text-background font-mono text-xs font-bold tracking-wider px-4"
             >
-              5º ENCONTRO
+              6º ENCONTRO
             </Button>
           </div>
 
@@ -118,7 +118,7 @@ export const Navbar = () => {
             }}
             className="w-full bg-amber hover:bg-amber/90 text-background font-mono text-xs font-bold tracking-wider"
           >
-            5º ENCONTRO
+            6º ENCONTRO
           </Button>
         </div>
       </div>
