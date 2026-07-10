@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gambiarra Arena — Encontro de 23/05/2026</title>
+<title>Relatório do 5º Encontro | Gambiarra LLM Club</title>
 <style>
 :root {
   --surface-1:#fcfcfb; --page:#f9f9f7; --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
@@ -87,8 +87,77 @@ footer { margin-top:64px; color:var(--muted); font-size:13.5px; border-top:1px s
 #themeBtn { position:fixed; top:14px; right:14px; background:var(--surface-1); color:var(--ink); border:1px solid var(--border); border-radius:20px; padding:6px 14px; font-size:13px; cursor:pointer; }
 @media print { #themeBtn { display:none; } }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@400;600;700;800&family=Bungee&display=swap" rel="stylesheet">
+<style>
+:root, :root[data-theme="dark"], :root[data-theme="light"] {
+  --surface-1:#1e1b19 !important;
+  --page:#110f0e !important;
+  --ink:#f0e8d8 !important;
+  --ink-2:#c9bfa7 !important;
+  --muted:#8a7f6b !important;
+  --grid:#2a2523 !important;
+  --axis:#3a332f !important;
+  --border:rgba(255,179,26,.18) !important;
+  --series-1:#ffb31a !important;
+  --series-1-strong:#ffcf5c !important;
+  --series-1-soft:rgba(255,179,26,.18) !important;
+  --series-2:#00e6a8 !important;
+  --crit:#e7472a !important;
+  --warn:#ffb31a !important;
+  --good:#00e600 !important;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --surface-1:#1e1b19 !important;
+    --page:#110f0e !important;
+    --ink:#f0e8d8 !important;
+    --ink-2:#c9bfa7 !important;
+    --muted:#8a7f6b !important;
+    --grid:#2a2523 !important;
+    --axis:#3a332f !important;
+    --border:rgba(255,179,26,.18) !important;
+    --series-1:#ffb31a !important;
+    --series-1-strong:#ffcf5c !important;
+    --series-1-soft:rgba(255,179,26,.18) !important;
+    --series-2:#00e6a8 !important;
+  }
+}
+body {
+  font-family: 'Outfit', system-ui, sans-serif !important;
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.03) 2px, rgba(0,0,0,.03) 4px),
+    var(--page) !important;
+}
+.kicker { color: var(--series-1) !important; font-family: 'JetBrains Mono', monospace !important; }
+h1, h2, h3 { font-family: 'Outfit', sans-serif !important; font-weight: 800 !important; }
+h1 { color: var(--series-1) !important; letter-spacing:-.01em; text-shadow: 0 0 30px rgba(255,179,26,.25); }
+h2 { color: var(--ink) !important; border-left: 3px solid var(--series-1); padding-left: 14px; }
+.card, .tile, .cap, .curio { border-radius: 4px !important; }
+.tile-v { color: var(--series-1) !important; font-family: 'JetBrains Mono', monospace !important; }
+code, .tick, .bval, .tl-time { font-family: 'JetBrains Mono', monospace !important; }
+a { color: var(--series-1); }
+#themeBtn { display: none !important; }
+.gb-topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(17,15,14,.88); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 20px; display:flex; justify-content:space-between; align-items:center;
+  font-family: 'JetBrains Mono', monospace; font-size: 13px;
+}
+.gb-topbar a { color: var(--series-1); text-decoration: none; }
+.gb-topbar a:hover { text-decoration: underline; }
+.gb-badge { display:inline-block; padding:2px 10px; background: rgba(255,179,26,.15); border:1px solid var(--series-1); color: var(--series-1); border-radius: 2px; font-size:11px; text-transform:uppercase; letter-spacing:.08em; }
+</style>
+
 </head>
 <body>
+<div class="gb-topbar">
+  <a href="/">&larr; Gambiarra LLM Club</a>
+  <span class="gb-badge">Relatório · 5º Encontro · 23/05/2026</span>
+</div>
+
 <button id="themeBtn" onclick="tgl()">◐ tema</button>
 <div id="tip"></div>
 <div class="wrap">
