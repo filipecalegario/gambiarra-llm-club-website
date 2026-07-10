@@ -125,7 +125,10 @@ ENCONTROS
   Sala Pontes, Porto Digital, Cais do Apolo, 222, Recife
 
 > 5 Encontro — 23 de Maio de 2026
-  Inscricoes: https://www.sympla.com.br/evento/5-encontro-do-gambiarra-llm-club/3421644
+  58 participantes, 69 dispositivos, 24 modelos rodando localmente.
+  Grande Final: SVG de uma capivara dancando frevo (25 gerações, 288 votos).
+  Estreia do modo World com 238 entradas de 54 criaturas.
+  Relatorio completo: /relatorio-5-encontro.html
 
 > 4 Encontro — 11 de Abril de 2026
 
