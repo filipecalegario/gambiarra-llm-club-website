@@ -22,7 +22,6 @@ const meetings = [
     title: "5º Encontro",
     date: "23 de Maio de 2026",
     status: "past" as const,
-    photo: encontro5,
     highlights: [
       "Mais um encontro com muitas gambiarras e aprendizado",
       "Competições criativas testando o limite dos LLMs",
