@@ -73,10 +73,10 @@ export const Footer = () => {
             </h3>
             <div className="space-y-2 font-mono text-xs text-muted-foreground">
               <p>
-                <span className="text-terminal">&gt;</span> 11 de Julho de 2026
+                <span className="text-terminal">&gt;</span> 7º Encontro
               </p>
               <p>
-                <span className="text-terminal">&gt;</span> 9h às 12h
+                <span className="text-terminal">&gt;</span> Data a definir
               </p>
               <p>
                 <span className="text-terminal">&gt;</span> Sala Pontes, Porto
