@@ -2,7 +2,7 @@ export const Footer = () => {
   return (
     <footer className="bg-background border-t border-border">
       {/* Contribute / Development section */}
-      <div className="py-16 px-6">
+      <div id="contribua" className="py-16 px-6 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="font-display text-2xl md:text-3xl text-amber mb-3 glitch-hover inline-block">
