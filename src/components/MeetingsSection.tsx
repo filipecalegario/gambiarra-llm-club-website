@@ -4,19 +4,31 @@ import encontro2 from "@/assets/encontro-2.jpg";
 import encontro3 from "@/assets/encontro-3.jpg";
 import encontro4 from "@/assets/encontro-4.jpg";
 import encontro5 from "@/assets/encontro-5.jpg";
+import encontro6Asset from "@/assets/encontro-6.jpg.asset.json";
 
 const meetings = [
   {
-    number: "6º",
-    title: "6º Encontro",
-    date: "11 de Julho de 2026",
+    number: "7º",
+    title: "7º Encontro",
+    date: "Em breve",
     status: "upcoming" as const,
     highlights: [
       "Inscrições em breve",
       "Novos desafios criativos com LLMs locais",
       "Sala Pontes, Porto Digital, Recife",
     ],
-    symplaUrl: "https://www.sympla.com.br/evento/6-encontro-do-gambiarra-llm-club/3494699",
+  },
+  {
+    number: "6º",
+    title: "6º Encontro",
+    date: "11 de Julho de 2026",
+    status: "past" as const,
+    photo: encontro6Asset.url,
+    highlights: [
+      "Mais um encontro com muitas gambiarras e aprendizado",
+      "Competições criativas testando o limite dos LLMs",
+      "Comunidade crescendo a cada edição",
+    ],
   },
   {
     number: "5º",
