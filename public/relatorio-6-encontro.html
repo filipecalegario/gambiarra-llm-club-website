@@ -3,85 +3,171 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gambiarra Arena — 6º Encontro (11/07/2026)</title>
+<title>Relatório do 6º Encontro | Gambiarra LLM Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --surface-1:#fcfcfb; --page:#f9f9f7; --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
   --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10);
-  --series-1:#2a78d6; --series-1-strong:#1c5cab; --series-1-soft:#cde2fb; --series-2:#1baf7a;
+:root {
+  --page:#100e0c;
+  --surface-1:#1c1917;
+  --ink:#ece5d5;
+  --ink-2:#c3b89e;
+  --muted:#8a7f6a;
+  --grid:#2a2622;
+  --axis:#3a352f;
+  --border:rgba(255,179,26,.18);
+  --amber:#ffb31a;
+  --amber-soft:rgba(255,179,26,.14);
+  --vermillion:#e85a34;
+  --green:#00e600;
+  --cyan:#00d9e6;
+  --series-1:var(--amber);
+  --series-1-strong:#ffd166;
+  --series-1-soft:rgba(255,179,26,.22);
+  --series-2:var(--green);
 }
-@media (prefers-color-scheme: dark) { :root {
-  --surface-1:#1a1a19; --page:#0d0d0d; --ink:#ffffff; --ink-2:#c3c2b7; --muted:#898781;
-  --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
-  --series-1:#3987e5; --series-1-strong:#6da7ec; --series-1-soft:#184f95; --series-2:#199e70;
-} }
-:root[data-theme="light"] { --surface-1:#fcfcfb; --page:#f9f9f7; --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10); --series-1:#2a78d6; --series-1-strong:#1c5cab; --series-1-soft:#cde2fb; --series-2:#1baf7a; }
-:root[data-theme="dark"] { --surface-1:#1a1a19; --page:#0d0d0d; --ink:#ffffff; --ink-2:#c3c2b7; --muted:#898781; --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10); --series-1:#3987e5; --series-1-strong:#6da7ec; --series-1-soft:#184f95; --series-2:#199e70; }
 * { box-sizing:border-box; margin:0; }
-body { background:var(--page); color:var(--ink); font-family:system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.55; }
+body {
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(255,179,26,.06), transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, rgba(0,217,230,.05), transparent 60%),
+    var(--page);
+  color:var(--ink);
+  font-family:'Outfit','JetBrains Mono',ui-monospace,monospace;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
 .wrap { max-width:980px; margin:0 auto; padding:32px 20px 80px; }
-header.hero { padding:56px 0 28px; }
-.kicker { text-transform:uppercase; letter-spacing:.14em; font-size:13px; font-weight:700; color:var(--series-1); }
-h1 { font-size:clamp(30px,5vw,46px); line-height:1.12; margin:10px 0 8px; }
+header.hero {
+  padding:56px 0 28px;
+  border-bottom:1px dashed var(--border);
+}
+.kicker {
+  font-family:'JetBrains Mono',monospace;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:12px;
+  font-weight:700;
+  color:var(--amber);
+}
+.kicker::before { content:"> "; color:var(--green); }
+h1 {
+  font-family:'Bungee',cursive;
+  font-size:clamp(30px,5vw,50px);
+  line-height:1.05;
+  margin:14px 0 10px;
+  color:var(--ink);
+  text-shadow:2px 2px 0 rgba(255,179,26,.15);
+}
+h1 strong, .hl { color:var(--amber); }
 .sub { color:var(--ink-2); font-size:17px; max-width:66ch; }
-h2 { font-size:24px; margin:56px 0 6px; }
+.sub em { color:var(--cyan); font-style:normal; }
+h2 {
+  font-family:'Bungee',cursive;
+  font-size:22px;
+  margin:56px 0 6px;
+  color:var(--amber);
+  letter-spacing:.02em;
+}
+h2::before { content:"# "; color:var(--vermillion); font-family:'JetBrains Mono',monospace; }
 .lede { color:var(--ink-2); margin-bottom:18px; max-width:70ch; }
-.card { background:var(--surface-1); border:1px solid var(--border); border-radius:12px; padding:20px; }
+.card {
+  background:var(--surface-1);
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:20px;
+  box-shadow:0 0 0 1px rgba(255,179,26,.04), 0 8px 24px -12px rgba(0,0,0,.6);
+}
 .tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; margin-top:20px; }
-.tile { background:var(--surface-1); border:1px solid var(--border); border-radius:12px; padding:14px 16px; }
-.tile-v { font-size:30px; font-weight:750; letter-spacing:-.01em; }
-.tile-l { color:var(--muted); font-size:13px; margin-top:2px; }
+.tile {
+  background:var(--surface-1);
+  border:1px solid var(--border);
+  border-left:3px solid var(--amber);
+  border-radius:4px;
+  padding:14px 16px;
+}
+.tile-v {
+  font-family:'JetBrains Mono',monospace;
+  font-size:28px; font-weight:700;
+  letter-spacing:-.01em;
+  color:var(--amber);
+}
+.tile-l {
+  color:var(--muted); font-size:12px; margin-top:4px;
+  text-transform:uppercase; letter-spacing:.08em;
+  font-family:'JetBrains Mono',monospace;
+}
 .chart { width:100%; height:auto; display:block; }
 .chart .grid { stroke:var(--grid); stroke-width:1; }
 .chart .axis { stroke:var(--axis); stroke-width:1; }
 .chart .tick { fill:var(--muted); font-size:12px; font-variant-numeric:tabular-nums; }
 .chart .blab { fill:var(--ink-2); font-size:13px; }
 .chart .bval { fill:var(--ink); font-size:12.5px; font-weight:650; font-variant-numeric:tabular-nums; }
+.chart .bar { fill:var(--amber); }
 .chart .bar:hover { opacity:.82; }
-.chart .line { fill:none; stroke:var(--series-1); stroke-width:2; stroke-linejoin:round; }
-.chart .area { fill:var(--series-1-soft); opacity:.55; }
+.chart .line { fill:none; stroke:var(--amber); stroke-width:2; stroke-linejoin:round; }
+.chart .area { fill:var(--series-1-soft); opacity:.7; }
 .chart .ann { stroke:var(--muted); stroke-width:1; stroke-dasharray:3 4; }
 .chart .annlab { fill:var(--ink-2); font-size:12px; font-weight:650; }
 .chart .hit { fill:transparent; }
-.chart .hit:hover { fill:var(--series-1); }
-.worldframe { width:100%; height:auto; display:block; border-radius:12px; }
+.chart .hit:hover { fill:var(--amber); fill-opacity:.4; }
+.worldframe { width:100%; height:auto; display:block; border-radius:4px; }
 .tl-item { display:grid; grid-template-columns:110px 18px 1fr; gap:0 14px; padding:0 0 26px; position:relative; }
 .tl-item:not(:last-child):before { content:""; position:absolute; left:calc(110px + 14px + 8px); top:16px; bottom:-4px; width:2px; background:var(--grid); }
-.tl-time { color:var(--muted); font-size:13px; font-weight:650; text-align:right; padding-top:2px; font-variant-numeric:tabular-nums; }
-.tl-dot { width:12px; height:12px; border-radius:50%; background:var(--series-1); margin-top:5px; position:relative; z-index:1; box-shadow:0 0 0 3px var(--page); }
-.tl-title { font-weight:700; }
+.tl-time { color:var(--amber); font-size:12px; font-weight:650; text-align:right; padding-top:2px; font-variant-numeric:tabular-nums; font-family:'JetBrains Mono',monospace; }
+.tl-dot { width:12px; height:12px; border-radius:50%; background:var(--amber); margin-top:5px; position:relative; z-index:1; box-shadow:0 0 0 3px var(--page), 0 0 12px var(--amber); }
+.tl-title { font-weight:700; color:var(--ink); }
 .tl-desc { color:var(--ink-2); font-size:15px; margin-top:2px; max-width:66ch; }
 .gallery { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:14px; margin-top:16px; }
-.cap { background:var(--surface-1); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
-.cap-img { background:#fff; aspect-ratio:1; display:flex; align-items:center; justify-content:center; padding:8px; }
+.cap { background:var(--surface-1); border:1px solid var(--border); border-radius:4px; overflow:hidden; }
+.cap-img { background:#f5efe1; aspect-ratio:1; display:flex; align-items:center; justify-content:center; padding:8px; }
 .cap-img img { max-width:100%; max-height:100%; }
-.cap figcaption { padding:10px 12px 12px; font-size:14px; }
-.cap-rank { font-size:13px; }
-.cap-meta { color:var(--muted); font-size:12.5px; }
+.cap figcaption { padding:10px 12px 12px; font-size:14px; color:var(--ink-2); }
+.cap-rank { font-size:13px; color:var(--amber); font-family:'JetBrains Mono',monospace; }
+.cap-meta { color:var(--muted); font-size:12px; font-family:'JetBrains Mono',monospace; }
 table.cmp { width:100%; border-collapse:collapse; font-size:15px; }
 table.cmp th, table.cmp td { padding:9px 12px; text-align:left; border-bottom:1px solid var(--grid); }
-table.cmp th { color:var(--muted); font-size:12.5px; text-transform:uppercase; letter-spacing:.06em; }
-table.cmp .num { font-variant-numeric:tabular-nums; }
-table.cmp .ok { color:#0a7a2f; font-weight:650; }
+table.cmp th { color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:.1em; font-family:'JetBrains Mono',monospace; }
+table.cmp .num { font-variant-numeric:tabular-nums; font-family:'JetBrains Mono',monospace; }
+table.cmp .ok { color:var(--green); font-weight:650; }
 table.matrix .who { color:var(--muted); font-size:12px; }
 table.matrix .muted { color:var(--muted); }
 table.matrix td, table.matrix th { white-space:nowrap; }
-@media (prefers-color-scheme: dark) { table.cmp .ok { color:#54d97c; } }
 .curios { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; margin-top:16px; }
-.curio { background:var(--surface-1); border:1px solid var(--border); border-radius:12px; padding:16px; }
-.curio-t { font-weight:700; margin-bottom:4px; }
+.curio { background:var(--surface-1); border:1px solid var(--border); border-left:3px solid var(--vermillion); border-radius:4px; padding:16px; }
+.curio-t { font-weight:700; margin-bottom:4px; color:var(--ink); }
 .curio-d { color:var(--ink-2); font-size:14.5px; }
-code { background:var(--grid); border-radius:4px; padding:1px 5px; font-size:.9em; }
-footer { margin-top:64px; color:var(--muted); font-size:13.5px; border-top:1px solid var(--grid); padding-top:16px; }
-#tip { position:fixed; pointer-events:none; background:var(--ink); color:var(--page); padding:6px 10px; border-radius:7px; font-size:13px; max-width:340px; opacity:0; transition:opacity .1s; z-index:10; }
-#themeBtn { position:fixed; top:14px; right:14px; background:var(--surface-1); color:var(--ink); border:1px solid var(--border); border-radius:20px; padding:6px 14px; font-size:13px; cursor:pointer; }
-@media print { #themeBtn { display:none; } }
+code, .mono {
+  background:var(--grid); color:var(--amber);
+  border-radius:3px; padding:1px 6px; font-size:.88em;
+  font-family:'JetBrains Mono',monospace;
+}
+a { color:var(--cyan); text-decoration:none; border-bottom:1px dashed rgba(0,217,230,.4); }
+a:hover { color:var(--amber); border-bottom-color:var(--amber); }
+strong { color:var(--ink); }
+footer {
+  margin-top:64px; color:var(--muted); font-size:12.5px;
+  border-top:1px dashed var(--border); padding-top:16px;
+  font-family:'JetBrains Mono',monospace;
+}
+footer::before { content:"// "; color:var(--vermillion); }
+#tip { position:fixed; pointer-events:none; background:var(--amber); color:var(--page); padding:6px 10px; border-radius:3px; font-size:13px; max-width:340px; opacity:0; transition:opacity .1s; z-index:10; font-family:'JetBrains Mono',monospace; }
+.back-link {
+  display:inline-block; margin-bottom:18px;
+  font-family:'JetBrains Mono',monospace; font-size:13px;
+  color:var(--amber); border-bottom:1px dashed var(--amber);
+}
+.back-link:hover { color:var(--green); border-bottom-color:var(--green); }
 </style>
 </head>
 <body>
-<button id="themeBtn" onclick="tgl()">◐ tema</button>
 <div id="tip"></div>
 <div class="wrap">
+<a href="/" class="back-link">&lt; voltar para gambiarra.club</a>
 
 <header class="hero">
   <div class="kicker">Gambiarra LLM Club · 6º Encontro · Agentes de código com modelos abertos e locais</div>
