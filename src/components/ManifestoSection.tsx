@@ -42,7 +42,8 @@ export const ManifestoSection = () => {
               voar, um PC cheio de esperança e uma vontade incontrolável de experimentar.
             </p>
 
-            <p>
+            {/* Pull quote */}
+            <div className="reveal pull-quote my-10">
               O nome &quot;gambiarra&quot; não é brincadeira nem autodepreciação, é
               posicionamento. Pode até soar estranho para quem associa o termo a código
               mal feito e solução desleixada de software. Mas estamos resgatando outro
@@ -52,7 +53,7 @@ export const ManifestoSection = () => {
               circuitos hegemônicos. Rodar LLMs localmente, afinando prompts, contextos
               e harnesses na unha e fazendo milagre com pouca VRAM, é exatamente esse
               tipo de prática: criativa, resiliente e cheia de humor.
-            </p>
+            </div>
 
             {/* Pull quote */}
             <div className="reveal pull-quote my-10">
