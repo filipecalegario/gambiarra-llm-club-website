@@ -121,8 +121,12 @@ Novos desafios sao criados a cada encontro pela comunidade!
 
 ENCONTROS
 
-> 6 Encontro — 11 de Julho de 2026, 9h as 12h
+> 7 Encontro — Em breve
   Sala Pontes, Porto Digital, Cais do Apolo, 222, Recife
+
+> 6 Encontro — 11 de Julho de 2026
+  Mais um encontro com muitas gambiarras e aprendizado.
+  Foto oficial: /__l5e/assets-v1/c4703ccc-cf18-4e54-be5b-0b5727766aaa/encontro-6.jpg
 
 > 5 Encontro — 23 de Maio de 2026
   58 participantes, 69 dispositivos, 24 modelos rodando localmente.
