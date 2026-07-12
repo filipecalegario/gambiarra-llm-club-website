@@ -36,6 +36,7 @@ export const CopyContentButton = () => {
       onClick={handleCopy}
       size="icon"
       className="fixed top-20 right-4 z-40 bg-card hover:bg-amber/20 text-amber border border-amber/20 shadow-lg transition-all duration-300 rounded-sm"
+      aria-label="Copiar todo o conteúdo da página"
       title="Copiar todo o conteúdo da página"
     >
       {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
