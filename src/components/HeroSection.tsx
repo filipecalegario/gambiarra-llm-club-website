@@ -44,21 +44,21 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
         {/* Primary CTA */}
         <Button
           onClick={() =>
-            document
-              .querySelector("#encontros")
-              ?.scrollIntoView({ behavior: "smooth" })
+            window.open(
+              "https://www.sympla.com.br/evento/7-encontro-do-gambiarra-llm-club/3499406",
+              "_blank"
+            )
           }
           size="lg"
           className="pulse-glow bg-amber hover:bg-amber/90 text-background font-display text-base md:text-lg px-8 md:px-12 py-6 md:py-7 rounded-sm tracking-wide transition-all duration-300 hover:scale-105"
         >
-          7º ENCONTRO EM BREVE
+          INSCRIÇÕES 7º ENCONTRO
         </Button>
 
         {/* Date & Location */}
         <div className="mt-8 space-y-1">
           <p className="font-mono text-xs md:text-sm text-muted-foreground">
-            <span className="text-terminal">&gt;</span> 7º encontro: data a
-            definir
+            <span className="text-terminal">&gt;</span> 7º encontro: 22 de agosto de 2026
           </p>
           <p className="font-mono text-xs md:text-sm text-muted-foreground">
             <span className="text-terminal">&gt;</span> Sala Pontes, Porto
