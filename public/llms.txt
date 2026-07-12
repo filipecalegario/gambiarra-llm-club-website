@@ -31,6 +31,8 @@ Nos, curiosos, malucos e entusiastas das inteligencias artificiais caseiras, dec
 
 Nao temos datacenter. Temos um notebook com cooler que parece que vai voar, um PC cheio de esperanca e uma vontade incontrolavel de experimentar.
 
+O nome "gambiarra" nao e brincadeira nem autodepreciacao, e posicionamento. Pode ate soar estranho para quem associa o termo a codigo mal feito e solucao desleixada de software. Mas estamos resgatando outro sentido: o da gambiarra como solucao criativa diante de limitacoes de recursos, uma forma legitima de fazer tecnologia quando se trata de reapropriar ferramentas, de driblar a escassez e de experimentar fora dos circuitos hegemonicos. Rodar LLMs localmente, afinando prompts, contextos e harnesses na unha e fazendo milagre com pouca VRAM, e exatamente esse tipo de pratica: criativa, resiliente e cheia de humor.
+
 Nao buscamos vencer benchmarks, nem queremos bater nenhuma big tech com seus super modelos. Queremos construir, brincar e subverter os limites com criatividade e engenhosidade.
 
 Inspirados pelos pioneiros do Homebrew Computer Club, montamos nossos proprios setups, ajustamos parametros na unha e fazemos milagre com pouca VRAM. Aqui, cada prompt e um experimento e cada erro, uma descoberta.
