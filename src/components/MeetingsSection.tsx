@@ -25,10 +25,13 @@ const meetings = [
     date: "11 de Julho de 2026",
     status: "past" as const,
     photo: encontro6Asset.url,
+    reportUrl: "/relatorio-6-encontro.html",
     highlights: [
-      "Mais um encontro com muitas gambiarras e aprendizado",
-      "Competições criativas testando o limite dos LLMs",
-      "Comunidade crescendo a cada edição",
+      "26 participantes, 22 dispositivos e 16 modelos locais diferentes na mesma rede",
+      "Gambiarra Arena: 367 votos de 14 votantes e pico de 17 agentes no modo World",
+      "Estreia da engenharia de prompt ao vivo: 34 versões de prompt de 5 participantes",
+      "Zero rate limits (eram 297 no 5º) — estado agora trafega por WebSocket",
+      "Jonathas Vinicius testou (10h–11h) sua plataforma de controle de bots de Minecraft, construída sobre a gambi de Arthur Brito, como parte do TCC",
     ],
   },
   {
