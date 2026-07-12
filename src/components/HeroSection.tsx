@@ -22,6 +22,9 @@ export const HeroSection = ({ onJoinClick }: HeroSectionProps) => {
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-20">
+        <h1 className="sr-only">
+          Gambiarra LLM Club — O primeiro clube de LLMs caseiras do Brasil
+        </h1>
         {/* Logo */}
         <div className="mb-6 animate-float">
           <img
