@@ -10,10 +10,11 @@ const meetings = [
   {
     number: "7º",
     title: "7º Encontro",
-    date: "Em breve",
+    date: "22 de Agosto de 2026",
     status: "upcoming" as const,
+    symplaUrl: "https://www.sympla.com.br/evento/7-encontro-do-gambiarra-llm-club/3499406",
     highlights: [
-      "Inscrições em breve",
+      "Inscrições abertas no Sympla",
       "Novos desafios criativos com LLMs locais",
       "Sala Pontes, Porto Digital, Recife",
     ],
