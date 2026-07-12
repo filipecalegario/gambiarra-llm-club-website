@@ -130,7 +130,8 @@ ENCONTROS
 > 6 Encontro — 11 de Julho de 2026
   26 participantes, 22 dispositivos, 16 modelos locais. Gambiarra Arena: 367 votos, pico de 17 agentes no modo World, 34 versoes de prompt de 5 participantes, zero rate limits.
   Jonathas Vinicius testou (10h-11h) sua plataforma de controle de bots de Minecraft, construida sobre a gambi de Arthur Brito, como parte do TCC.
-  Relatorio completo: /relatorio-6-encontro.html
+  Relatorio do experimento de Minecraft: /relatorio-minecraft-jonathas.html
+  Relatorio do encontro: /relatorio-6-encontro.html
   Foto oficial: /__l5e/assets-v1/c4703ccc-cf18-4e54-be5b-0b5727766aaa/encontro-6.jpg
 
 > 5 Encontro — 23 de Maio de 2026

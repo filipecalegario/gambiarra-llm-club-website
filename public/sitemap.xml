@@ -14,5 +14,9 @@
     <loc>https://gambiarra.club/relatorio-6-encontro.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  <url>
+    <loc>https://gambiarra.club/relatorio-minecraft-jonathas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
