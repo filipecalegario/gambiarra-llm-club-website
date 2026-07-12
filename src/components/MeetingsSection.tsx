@@ -26,6 +26,8 @@ const meetings = [
     status: "past" as const,
     photo: encontro6Asset.url,
     reportUrl: "/relatorio-6-encontro.html",
+    experimentUrl: "/relatorio-minecraft-jonathas.html",
+    experimentLabel: "> ver relatório do experimento de Minecraft (TCC do Jonathas)",
     highlights: [
       "26 participantes, 22 dispositivos e 16 modelos locais diferentes na mesma rede",
       "Gambiarra Arena: 367 votos de 14 votantes e pico de 17 agentes no modo World",
@@ -187,6 +189,17 @@ export const MeetingsSection = () => {
                       className="mt-4 inline-block font-mono text-xs text-amber hover:underline underline-offset-4"
                     >
                       &gt; ver relatório completo do encontro
+                    </a>
+                  )}
+
+                  {"experimentUrl" in meeting && (meeting as any).experimentUrl && (
+                    <a
+                      href={(meeting as any).experimentUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 ml-4 inline-block font-mono text-xs text-amber hover:underline underline-offset-4"
+                    >
+                      {(meeting as any).experimentLabel || "> ver relatório do experimento"}
                     </a>
                   )}
 
