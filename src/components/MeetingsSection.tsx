@@ -31,7 +31,7 @@ const meetings = [
       "Gambiarra Arena: 367 votos de 14 votantes e pico de 17 agentes no modo World",
       "Estreia da engenharia de prompt ao vivo: 34 versões de prompt de 5 participantes",
       "Zero rate limits (eram 297 no 5º) — estado agora trafega por WebSocket",
-      "Jonathas Vinicius testou (10h–11h) sua plataforma de controle de bots de Minecraft, construída sobre a gambi de Arthur Brito, como parte do TCC — [relatório do experimento](/relatorio-minecraft-jonathas.html)",
+      "Jonathas Vinicius testou (10h–11h) sua plataforma de controle de bots de Minecraft, construída sobre a gambi de Arthur Brito, como parte do TCC",
     ],
   },
   {
