@@ -16,6 +16,7 @@ export const Navbar = () => {
     { label: "Manifesto", href: "#manifesto" },
     { label: "Competições", href: "#competicoes" },
     { label: "Encontros", href: "#encontros" },
+    { label: "Contribua", href: "#contribua" },
   ];
 
   const scrollTo = (href: string) => {
