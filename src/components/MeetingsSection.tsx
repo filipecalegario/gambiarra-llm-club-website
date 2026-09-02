@@ -7,7 +7,20 @@ import encontro5 from "@/assets/encontro-5.jpg";
 import encontro6Asset from "@/assets/encontro-6.jpg.asset.json";
 import encontro7Asset from "@/assets/encontro-7.jpg.asset.json";
 
-const meetings = [
+type Meeting = {
+  number: string;
+  title: string;
+  date: string;
+  status: "upcoming" | "past";
+  photo?: string;
+  reportUrl?: string;
+  experimentUrl?: string;
+  experimentLabel?: string;
+  symplaUrl?: string;
+  highlights: string[];
+};
+
+const meetings: Meeting[] = [
   {
     number: "7º",
     title: "7º Encontro",
