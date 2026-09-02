@@ -5,18 +5,24 @@ import encontro3 from "@/assets/encontro-3.jpg";
 import encontro4 from "@/assets/encontro-4.jpg";
 import encontro5 from "@/assets/encontro-5.jpg";
 import encontro6Asset from "@/assets/encontro-6.jpg.asset.json";
+import encontro7Asset from "@/assets/encontro-7.jpg.asset.json";
 
 const meetings = [
   {
     number: "7º",
     title: "7º Encontro",
     date: "22 de Agosto de 2026",
-    status: "upcoming" as const,
-    symplaUrl: "https://www.sympla.com.br/evento/7-encontro-do-gambiarra-llm-club/3499406",
+    status: "past" as const,
+    photo: encontro7Asset.url,
+    reportUrl: "/relatorio-7-encontro.html",
     highlights: [
-      "Inscrições abertas no Sympla",
-      "Novos desafios criativos com LLMs locais",
-      "Sala Pontes, Porto Digital, Recife",
+      "30 participantes, 25 dispositivos e 23 modelos diferentes na mesma rede",
+      "716 votos de 22 votantes — quase o dobro do encontro anterior",
+      "World mais cheio da história: pico de 20 agentes; guilhermy campeão com 118 comidas no braço do gemma3:4b",
+      "Rodada 1 (capivara dançando frevo): 21 gerações e 444 votos; gaguinho venceu com média 4.43",
+      "Rodada 2 com prompt escrito ao vivo pela plateia: antena na lama com Chico Science; Cumaru venceu com 4.59",
+      "6 gerações resgatadas de quem caiu no meio do envio — ninguém ficou de fora",
+      "Zero rate limits pelo 3º encontro seguido",
     ],
   },
   {
