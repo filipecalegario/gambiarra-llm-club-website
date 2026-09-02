@@ -73,27 +73,17 @@ export const Footer = () => {
             </h3>
             <div className="space-y-2 font-mono text-xs text-muted-foreground">
               <p>
-                <span className="text-terminal">&gt;</span> 7º Encontro
+                <span className="text-terminal">&gt;</span> 8º Encontro
               </p>
               <p>
-                <span className="text-terminal">&gt;</span> 22 de agosto de 2026
+                <span className="text-terminal">&gt;</span> Data a definir
               </p>
               <p>
-                <span className="text-terminal">&gt;</span> Sala Pontes, Porto
-                Digital
+                <span className="text-terminal">&gt;</span> Porto Digital,
+                Recife
               </p>
               <p className="text-muted-foreground/60 pl-3">
-                Cais do Apolo, 222, Recife
-              </p>
-              <p className="pl-3">
-                <a
-                  href="https://www.sympla.com.br/evento/7-encontro-do-gambiarra-llm-club/3499406"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-amber hover:underline underline-offset-4"
-                >
-                  &gt; inscreva-se no Sympla
-                </a>
+                Inscrições em breve
               </p>
             </div>
           </div>
