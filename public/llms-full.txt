@@ -194,7 +194,7 @@ CONTRIBUA
 
 O Gambiarra LLM Club e open source. Ajude a construir a plataforma e o site da comunidade.
 
-~/plataforma — https://github.com/filipecalegario/gambiarra-plataforma
+~/plataforma — https://github.com/gambiarraclub/gambiarra-arena
 Plataforma para gerenciar competicoes e rankings do clube
 
 ~/website — https://github.com/filipecalegario/gambiarra-llm-club-website

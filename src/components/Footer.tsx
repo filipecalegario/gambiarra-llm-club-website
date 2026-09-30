@@ -15,7 +15,7 @@ export const Footer = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-5">
             <a
-              href="https://github.com/filipecalegario/gambiarra-plataforma"
+              href="https://github.com/gambiarraclub/gambiarra-arena"
               target="_blank"
               rel="noopener noreferrer"
               className="group block p-5 rounded-sm border border-border hover:border-cyan/40 bg-card/40 hover:bg-card/70 transition-all duration-300"
@@ -29,7 +29,7 @@ export const Footer = () => {
                 </span>
               </div>
               <p className="font-display text-sm text-foreground mb-1">
-                gambiarra-plataforma
+                gambiarra-arena
               </p>
               <p className="font-body text-xs text-muted-foreground">
                 Plataforma para gerenciar competições e rankings do clube
