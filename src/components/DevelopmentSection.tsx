@@ -3,9 +3,9 @@ import { ExternalLink, Github } from "lucide-react";
 
 const developmentResources = [
   {
-    title: "Plataforma Gambiarra",
+    title: "Gambiarra Arena",
     description: "Repositório oficial da plataforma para gerenciar competições e rankings do clube",
-    url: "https://github.com/filipecalegario/gambiarra-plataforma",
+    url: "https://github.com/gambiarraclub/gambiarra-arena",
     icon: Github,
   },
   {
